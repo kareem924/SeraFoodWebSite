@@ -81,7 +81,15 @@ namespace SeraFood.Controllers
             }
         }
 
-
+        public ActionResult Details(int id)
+        {
+           
+            var model = _uow.Products.Find(id);
+            ViewBag.Categories = new SelectList(_uow.Categories.List(), "CategoryId", "CategoryName");
+            if (model != null)
+                return View(model);
+            return HttpNotFound();
+        }
         public ActionResult Edit(int id)
         {
             ViewBag.Categories = new SelectList(_uow.Categories.List(), "CategoryId", "CategoryName");
