@@ -1,0 +1,14 @@
+﻿@model SeraFood.Models.Category
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("Edit", "Categories", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
+{      <br />
+    <br />
+    <legend>Edit</legend>
+    @Html.Partial("_CreateOrUpdate", Model)
+
+}
+
