@@ -1,6 +1,7 @@
 ﻿@model SeraFood.Models.Product
 @{
     ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
 {      <br/>
