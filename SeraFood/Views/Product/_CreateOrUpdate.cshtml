@@ -1,0 +1,40 @@
+﻿@model SeraFood.Models.Product
+
+
+@Html.HiddenFor(p => p.ProductId)
+@Html.HiddenFor(p=>p.ProductImage)
+<div class="form-group">
+    <label>Product Name</label>
+    @Html.TextBoxFor(p => p.ProductName, new { @class = "form-control", placeholder = "Enter ProductName" })
+</div>
+<div class="form-group">
+    <label >Product Category</label>
+    @Html.DropDownListFor(p=>p.CategoryId, ViewBag.Categories as SelectList, new { @class = "form-control"})
+</div>
+
+<div class="form-group">
+    <label >Price</label>
+    @Html.TextBoxFor(p => p.ProductPrice, new { @class = "form-control", placeholder = "Enter price" })
+</div>
+<div class="form-group">
+    <label >Product Description</label>
+    @Html.TextBoxFor(p => p.ProductDescription, new { @class = "form-control", placeholder = "Enter Description" })
+</div>
+<div class="form-group">
+    <label >Full Description</label>
+  @Html.TextAreaFor(p=>p.FullDescription,new { @class="form-control",placeholder="Enter Full Description" ,style="height: 125px"})
+</div>
+<div class="fileinput fileinput-new" data-provides="fileinput" style="margin-left: 360px">
+    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 400px; height: 225px;"></div>
+    <div>
+        <span  class="btn btn-default btn-file" style="width: 319px"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+    </div>
+</div>
+
+<button type="submit" class="btn btn-success" style="margin-left:50px;width: 850px; ">Submit</button>
+@Html.ActionLink("Back to index", "Index", "Product", new { @class = "btn btn-danger",style="width:210px" })
+
+
+
+

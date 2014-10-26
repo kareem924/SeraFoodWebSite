@@ -1,0 +1,12 @@
+﻿@model SeraFood.Models.Product
+
+@{
+    ViewBag.Title = "Edit";
+}
+@using (Html.BeginForm("Edit", "Product", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
+{      <br />
+    <br />
+    <legend>Edit @Model.ProductName</legend>
+    @Html.Partial("_CreateOrUpdate", Model)
+
+}
