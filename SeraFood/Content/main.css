@@ -720,7 +720,7 @@ h6 {
 
 /* 10. Header area  */
 header {
-	background-image:url(../img/header/header-gradient.png);
+	background-image:url(imges/header/header-gradient.png);
 	background-repeat:repeat-x;
 	background-position:0px -50px;
 	padding:40px 0;
@@ -768,7 +768,7 @@ header.fixed .pm-header-logo {
 
 /* 11. Slider container  */
 .pm-slider-container {
-	background-image:url(../img/slider/slide1.jpg);
+	background-image:url(imges/slider/slide1.jpg);
 	background-repeat:no-repeat;
 	background-position:top center;
 	width:100%;
@@ -946,7 +946,7 @@ header.fixed .pm-header-logo {
 	width:100%;
     background-color: #16273E;
 	padding:10px 0;
-	background-image:url(../img/header/sub-menu-bg-dark.jpg);
+	background-image:url(imges/header/sub-menu-bg-dark.jpg);
 }
 
 .pm-footer-copyright p {
@@ -1222,7 +1222,7 @@ header.fixed .pm-header-logo {
 	text-transform:uppercase;
 	padding-bottom:10px;
 	margin-bottom:25px;
-	background-image:url(../img/widget-title-divider.jpg);
+	background-image:url(imgs/widget-title-divider.jpg);
 	background-repeat:no-repeat;
 	background-position:left bottom;
 	border-bottom:3px solid #FFB100;
@@ -1781,7 +1781,7 @@ header.fixed .pm-header-logo {
 }
 
 .pm-mobile-global-menu-btns li {
-	background-image:url(../img/menu-divider.jpg);
+	background-image:url(imges/menu-divider.jpg);
 	background-position:bottom left;
 	background-repeat:no-repeat;
 	margin-bottom:10px;
@@ -1888,7 +1888,7 @@ header.fixed .pm-header-logo {
 .pm-sub-header-container {
 	height:340px;
 	width:100%;
-	background-image:url(../img/slider/slide1.jpg);
+	background-image:url(imges/slider/slide1.jpg);
 	background-repeat:no-repeat;
 	position:relative;
 }
@@ -2034,15 +2034,15 @@ header.fixed .pm-header-logo {
 }
 
 .pm-featured-header-title-container.menus {
-	background-image:url(../img/panels/panel-header-1.jpg);	
+	background-image:url(imges/panels/panel-header-1.jpg);	
 }
 
 .pm-featured-header-title-container.events {
-	background-image:url(../img/panels/event-header.jpg);	
+	background-image:url(imges/panels/event-header.jpg);	
 }
 
 .pm-featured-header-title-container.news {
-	background-image:url(../img/panels/news-header.jpg);	
+	background-image:url(imges/panels/news-header.jpg);	
 }
 
 .pm-featured-header-title {
@@ -2634,7 +2634,7 @@ header.fixed .pm-header-logo {
 
 
 .ui-widget-header .ui-icon {
-    background-image: url("images/ui-icons_222222_256x240_white.png") !important;
+    background-image: url("imgs/ui-icons_222222_256x240_white.png") !important;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
