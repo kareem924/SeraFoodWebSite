@@ -10,6 +10,7 @@ using SeraFood.Models.UnitOfWork;
 
 namespace SeraFood.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         IUnitOfWork _uow;
@@ -27,15 +28,15 @@ namespace SeraFood.Controllers
         {
             var products = _uow.Products.List();
             var pageNumber = page ?? 1; // if no page was specified in the querystring, default to the first page (1)
-            var onePageOfProducts = products.OrderBy(p=>p.ProductName).ToPagedList(pageNumber, 14); // will only contain 25 products max because of the pageSize
+            var onePageOfProducts = products.OrderBy(p => p.ProductName).ToPagedList(pageNumber, 14); // will only contain 25 products max because of the pageSize
 
             ViewBag.OnePageOfProducts = onePageOfProducts;
             return View();
         }
         [HttpPost]
-        public ActionResult Index(string productName,int? page)
+        public ActionResult Index(string productName, int? page)
         {
-            var products = _uow.Products.List(p=>p.ProductName.Contains(productName));
+            var products = _uow.Products.List(p => p.ProductName.Contains(productName));
             var pageNumber = page ?? 1; // if no page was specified in the querystring, default to the first page (1)
             var onePageOfProducts = products.OrderBy(p => p.ProductName).ToPagedList(pageNumber, 14); // will only contain 25 products max because of the pageSize
 
@@ -54,10 +55,10 @@ namespace SeraFood.Controllers
 
         public ActionResult Create(Product productToCreate)
         {
-            
+
             try
             {
-               
+
                 //"MVC,Razor,ASP.NET"
                 if (ModelState.IsValid)
                 {
@@ -83,7 +84,7 @@ namespace SeraFood.Controllers
 
         public ActionResult Details(int id)
         {
-           
+
             var model = _uow.Products.Find(id);
             ViewBag.Categories = new SelectList(_uow.Categories.List(), "CategoryId", "CategoryName");
             if (model != null)
@@ -142,14 +143,15 @@ namespace SeraFood.Controllers
             }
         }
 
-      
+
         public ActionResult Delete(int id)
         {
             _uow.Products.Delete(id);
             _uow.Save();
             return RedirectToAction("Index");
- 
+
         }
+        [AllowAnonymous]
         public FileResult Download(int ProductId)
         {
             var model = _uow.Products.Find(ProductId);
@@ -158,6 +160,12 @@ namespace SeraFood.Controllers
                 return null;
             }
             return File(Path.Combine(Server.MapPath("~/Content/Images"), Path.GetFileName(model.ProductImage)), "image");
+        }
+        [AllowAnonymous]
+        public ActionResult Prodtucts(int id)
+        {
+            var model = _uow.Products.List(p => p.CategoryId == id);
+           return View(model);
         }
     }
 }

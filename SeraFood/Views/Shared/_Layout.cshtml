@@ -60,7 +60,7 @@
     <div class="pm-mobile-global-menu">
 
         <div class="pm-mobile-global-menu-logo">
-            <a href="index.html"><img src="~/Content/imges/SERA MACAW2.png" alt="Vienna Restaurant"></a>
+            <a href="@Url.Action("Index", "Home")"><img src="~/Content/imges/SERA MACAW2.png" alt="Vienna Restaurant"></a>
         </div>
 
         <div class="pm-mobile-global-menu-search">
@@ -71,7 +71,7 @@
 
         <ul class="sf-menu pm-nav">
 
-            <li><a href="index.html">Home</a></li>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
             <li>
                 <a href="#">Menus</a>
                 <ul>
@@ -151,18 +151,13 @@
 
                         <div class="pm-sub-menu-info">
                             <p class="pm-address"><i class="fa fa-map-marker"></i> 21 Dr.Zaki Hassan Street,Cairo,Egypt</p>
-                            <p class="pm-contact"><i class="fa fa-mobile-phone"></i> 0109 7711  424</p>
+                            <p class="pm-contact"><i class="fa fa-mobile-phone"></i> 02 226 065 59</p>
                         </div>
 
                     </div>
 
-                    <div class="col-lg-2 col-md-2 col-sm-6 visible-lg visible-md pm-book-event">
-                        <div class="pm-sub-menu-book-event">
-                            <a href="book-an-event.html">Book an Event <i class="fa fa-calendar"></i></a>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-5 col-md-5 col-sm-6">
+                    <div class="col-lg-5 col-md-5 col-sm-6" style="margin-left: 165px;">
                         <ul class="pm-sub-navigation">
                             <li>
                                 <div class="pm-dropdown pm-language-selector-menu">
@@ -178,11 +173,11 @@
                                     </div>
                                 </div>
                             </li>
-                            
+
                             <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact Us","Contact","Home")</li>
+                            <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                             @*<li class="pm-search-btn-li"><a href="#" class="pm-search-btn" id="pm-search-btn"><i class="fa fa-search"></i></a></li>
-                            <li class="pm-cart-btn-li"><a href="cart.html" class="pm-cart-btn"><i class="fa fa-shopping-cart"></i></a></li>*@
+                <li class="pm-cart-btn-li"><a href="cart.html" class="pm-cart-btn"><i class="fa fa-shopping-cart"></i></a></li>*@
                         </ul>
                     </div>
 
@@ -203,7 +198,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
 
                         <div class="pm-header-logo-container">
-                            <a href="index.html"><img src="~/Content/imges/SERA MACAW2.png" class="img-responsive pm-header-logo" alt="Vienna Restaurant"></a>
+                            <a href="@Url.Action("Index","Home")"><img src="~/Content/imges/SERA MACAW2.png" class="img-responsive pm-header-logo" alt="Vienna Restaurant"></a>
                         </div>
 
                         <div class="pm-header-mobile-btn-container">
@@ -219,7 +214,7 @@
 
                             <ul class="sf-menu pm-nav">
 
-                                <li><a href="index.html">Home</a></li>
+                                <li>@Html.ActionLink("Home","Index","Home")</li>
                                 <li>
                                     <a href="#">Menus</a>
                                     <ul>
@@ -505,7 +500,7 @@
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-12 pm-footer-navigation-col">
                         <ul class="pm-footer-navigation" id="pm-footer-nav">
-                            <li><a href="index.html">Home</a></li>
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
                             <li><a href="menus.html">Menus</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="events.html">Browse Events</a></li>

@@ -1903,7 +1903,8 @@ header.fixed .pm-header-logo {
 	font-size:36px;
 	color:white;
 	text-align:center;
-	background-color:rgba(0,0,0,.8);
+background-color: #16273E;
+opacity: .8;
 	margin:0 auto;
 	display:table;	
 	padding:20px 100px;
@@ -1921,7 +1922,7 @@ header.fixed .pm-header-logo {
 	font-size:18px;
 	color:white;
 	text-align:center;
-	background-color:rgba(0,0,0,.8);
+	background-color:rgba(22,39,62,.8);
 	margin:1px auto 0 auto;
 	display:table;	
 	padding:10px 30px;

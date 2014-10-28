@@ -331,7 +331,7 @@ video {
 	color:white;
 	font-size:50px;
 	padding:25px 180px;
-	background-color:rgba(0,0,0,.8);
+	background-color:rgba(22,39,62,.8);
 	text-transform:uppercase;
   	overflow: hidden;
 	margin:0 auto;
@@ -366,7 +366,7 @@ video {
 
 
 .pm-caption-decription {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(22,39,62,.8);
     color: white;
     display: table;
     font-size: 24px;

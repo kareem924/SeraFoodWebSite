@@ -10,9 +10,10 @@ using SeraFood.Models.UnitOfWork;
 
 namespace SeraFood.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
-       IUnitOfWork _uow;
+        IUnitOfWork _uow;
         public CategoriesController()
         {
             _uow = new UnitOfWork();
@@ -54,10 +55,10 @@ namespace SeraFood.Controllers
 
         public ActionResult Create(Category categoryToCreate)
         {
-            
+
             try
             {
-               
+
                 //"MVC,Razor,ASP.NET"
                 if (ModelState.IsValid)
                 {
@@ -81,7 +82,7 @@ namespace SeraFood.Controllers
             }
         }
 
-       
+
         public ActionResult Edit(int id)
         {
             ViewBag.Brands = new SelectList(_uow.Brand.List(), "BrandId", "BrandName");
@@ -134,14 +135,15 @@ namespace SeraFood.Controllers
             }
         }
 
-      
+
         public ActionResult Delete(int id)
         {
             _uow.Categories.Delete(id);
             _uow.Save();
             return RedirectToAction("Index");
- 
+
         }
+        [AllowAnonymous]
         public FileResult Download(int id)
         {
             var model = _uow.Categories.Find(id);
@@ -151,5 +153,11 @@ namespace SeraFood.Controllers
             }
             return File(Path.Combine(Server.MapPath("~/Content/Images"), Path.GetFileName(model.CategoryImageName)), "image");
         }
-	}
+        [AllowAnonymous]
+        public ActionResult Category(int id)
+        {
+            var model = _uow.Categories.List(p => p.BrandId == id);
+            return View(model);
+        }
+    }
 }

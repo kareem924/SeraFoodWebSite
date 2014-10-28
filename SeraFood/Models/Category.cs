@@ -11,5 +11,6 @@ namespace SeraFood.Models
         public int BrandId { get; set; }
         public string CategoryName { get; set; }
         public string CategoryImageName { get; set; }
+        public string CategoryDescription { get; set; }
     }
 }

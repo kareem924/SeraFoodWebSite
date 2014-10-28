@@ -301,6 +301,7 @@
     <Content Include="Content\imges\slider\slide2.jpg" />
     <Content Include="Content\imges\slider\slide3.jpg" />
     <Content Include="Content\imges\slider\_notes\dwsync.xml" />
+    <Content Include="Content\imges\staff\photo1.png" />
     <Content Include="Content\imges\staff\staff1.jpg" />
     <Content Include="Content\imges\staff\staff2.jpg" />
     <Content Include="Content\imges\staff\staff3.jpg" />
@@ -868,6 +869,8 @@
     <Content Include="Views\Categories\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Scripts\owl-carousel\.DS_Store" />
+    <Content Include="Views\Categories\Category.cshtml" />
+    <Content Include="Views\Product\Prodtucts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
