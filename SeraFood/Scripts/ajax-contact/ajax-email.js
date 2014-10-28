@@ -15,7 +15,7 @@
 	
 	function sendContactInfo() {
 	
-		contactFormXML.open("POST", "js/ajax-contact/send_email.php",true);
+		contactFormXML.open("POST", "Scripts/ajax-contact/send_email.php",true);
 		contactFormXML.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		var form = $('#pm-contact-form');
 		contactFormXML.send(form.serialize());
