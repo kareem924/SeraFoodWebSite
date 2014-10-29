@@ -152,9 +152,9 @@ namespace SeraFood.Controllers
 
         }
         [AllowAnonymous]
-        public FileResult Download(int ProductId)
+        public FileResult Download(int id)
         {
-            var model = _uow.Products.Find(ProductId);
+            var model = _uow.Products.Find(id);
             if (model.ProductImage == null)
             {
                 return null;
@@ -166,6 +166,12 @@ namespace SeraFood.Controllers
         {
             var model = _uow.Products.List(p => p.CategoryId == id);
            return View(model);
+        }
+
+        public ActionResult ProductItem(int id)
+        {
+            var Item = _uow.Products.Find(id);
+            return View(Item);
         }
     }
 }

@@ -871,6 +871,7 @@
     <Content Include="Scripts\owl-carousel\.DS_Store" />
     <Content Include="Views\Categories\Category.cshtml" />
     <Content Include="Views\Product\Prodtucts.cshtml" />
+    <Content Include="Views\Product\ProductItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

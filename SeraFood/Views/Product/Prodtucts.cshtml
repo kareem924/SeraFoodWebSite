@@ -5,60 +5,52 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Prodtucts</h2>
+<!-- SUB-HEADER area -->
+<div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CategoryId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FullDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductPrice)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductImage)
-        </th>
-        <th></th>
-    </tr>
+    <div class="pm-sub-header-title-container">
+        <p class="pm-sub-header-title"><span>Store</span></p>
+        <p class="pm-sub-header-message">Take home the Vienna experience</p>
+    </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CategoryId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FullDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductPrice)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductImage)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
-        </td>
-    </tr>
-}
+</div>
 
-</table>
+<!-- SUB-HEADER area end -->
+<!-- BODY CONTENT starts here -->
+
+<div class="container pm-containerPadding80">
+    <div class="row">
+        @foreach (var prdct in Model)
+        {
+            <!-- store item -->
+            <div class="col-lg-3 col-md-3 col-sm-6 pm-column-spacing">
+
+                <div class="pm-store-item-container">
+                    <a href="@Url.Action("ProductItem", "Product", new { id = prdct.ProductId })">
+                        <div class="pm-store-item-img-container" style="background-image: url(@Url.Action("Download", "Product", new { id = prdct.ProductId }));">
+                            <div class="pm-store-item-date">
+                                <p class="pm-store-item-price">&#163; @prdct.ProductPrice</p>
+                            </div>
+                        </div></a>
+
+                        <div class="pm-store-item-desc">
+                            <a href="@Url.Action("ProductItem", "Product", new { id = prdct.ProductId })">    <p class="pm-store-item-title">@prdct.ProductName</p></a>
+                            <div class="pm-store-item-divider"></div>
+                            <p class="pm-store-item-excerpt">>Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget  <a href="#"></a> </p>
+                            <div class="pm-store-item-divider"></div>
+                            @*<ul class="pm-store-item-btns">*@
+                            @*<li><a href="cart.html" class="pm-rounded-btn small pm-primary">add to cart</a></li>*@
+                            @*<li><a href="store-item-post.html" class="pm-rounded-btn expand small pm-secondary"><i class="fa fa-bars"></i></a></li>*@
+                            @*</ul>*@
+                        </div>
+</div>
+
+            </div>
+            <!-- /.col-lg-4 -->
+            <!-- /store item -->
+        }
+
+
+    </div>
+</div>
+<!-- BODY CONTENT end -->
