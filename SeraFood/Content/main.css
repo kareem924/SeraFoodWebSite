@@ -141,9 +141,9 @@ ul li:before {
 ul {
 	color:#5f5f5f;
 	font-family:'Open Sans';
-	font-size:14px;
+	font-size:26px;
 	font-weight:100;	
-	line-height:24px;	
+	line-height:2px;	
 	margin:15px 0;
 	list-style:none;
 }
@@ -376,7 +376,7 @@ h6 {
 }
 
 .pm-secondary {
-	color:#000000 !important;
+	color:#16273E !important;
 }
 
 .pm-no-margin {
@@ -531,7 +531,7 @@ h6 {
 
 #back-top:hover {
 	cursor:pointer;
-	background-color:#333;
+	background-color:#16273E;
 }
 
 
@@ -699,7 +699,7 @@ h6 {
 }
 
 .pm-sub-navigation a:hover {
-	color:#F14527;
+	color:#FFAF00;
 }
 
 .pm-sub-navigation a i {
@@ -885,7 +885,7 @@ header.fixed .pm-header-logo {
 /* 15. Footer  */
 .pm-footer-social-info-container, .pm-footer-subscribe-container {
 	border-top:3px solid #FFB100;
-	padding:30px 0;
+	padding:5px 0;
 }
 
 .pm-footer-social-info-container, .pm-footer-subscribe-container p {
@@ -897,7 +897,7 @@ header.fixed .pm-header-logo {
 .pm-footer-social-info-container h6, .pm-footer-subscribe-container h6 {
 	color: #2c2c2c;
     font-family: 'Cantata One';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin: 0 0 20px;
 }
@@ -946,7 +946,7 @@ header.fixed .pm-header-logo {
 	width:100%;
     background-color: #16273E;
 	padding:10px 0;
-	background-image:url(imges/header/sub-menu-bg-dark.jpg);
+
 }
 
 .pm-footer-copyright p {
@@ -2035,7 +2035,7 @@ opacity: .8;
 }
 
 .pm-featured-header-title-container.menus {
-	background-image:url(imges/panels/panel-header-1.jpg);	
+	background-image:url(imges/panels/cateringsera.jpg);	
 }
 
 .pm-featured-header-title-container.events {
@@ -2043,7 +2043,7 @@ opacity: .8;
 }
 
 .pm-featured-header-title-container.news {
-	background-image:url(imges/panels/news-header.jpg);	
+	background-image:url(imges/panels/franchise-page-hero1.jpg);	
 }
 
 .pm-featured-header-title {
@@ -2056,7 +2056,7 @@ opacity: .8;
 
 .pm-featured-header-message {
 	font-size:18px;
-	color:#ffc3a3;
+    color: #FFB100;
 	font-family:'Cantata One';
 	margin:0 auto;
 	display:table;
@@ -2065,8 +2065,10 @@ opacity: .8;
 /* 28. Isotope filter system */
 .pm-isotope-filter-container {
 	width:100%;
-	min-height:72px;
-	background-color:#efefef;
+	min-height:42px;
+    margin-top: 20px;
+	background-color: #16273E;
+    opacity: .8;
 }
 
 .pm-isotope-filter-system {
@@ -2106,6 +2108,7 @@ opacity: .8;
 .pm-isotope-filter-system li a {
 	font-family:'Cantata One';
 	font-size:12px;
+    margin-left: 40px;
 	color:#868686;
 	text-transform:uppercase;
 	padding-top:20px;
@@ -2123,8 +2126,25 @@ opacity: .8;
 	color:#FFB100;
 }
 
-.pm-isotope-filter-system li a:hover {
-	color:#F03B1C;
+#sera {
+    border-top:3px solid #E72500;
+	color:#E72500;
+}
+#macaw {
+       border-top:3px solid white;
+	color:white;
+}
+#unique {
+       border-top:3px solid #B8A35C;
+	color:#B8A35C;
+}
+#orange {
+       border-top:3px solid #F57A00;
+	color:#F57A00;
+}
+#Signature{
+       border-top:3px solid #9FB300;
+	color:#9FB300;
 }
 
 .pm-isotope-filter-system-expand {

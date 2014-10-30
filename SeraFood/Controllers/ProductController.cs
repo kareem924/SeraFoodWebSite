@@ -162,7 +162,7 @@ namespace SeraFood.Controllers
             return File(Path.Combine(Server.MapPath("~/Content/Images"), Path.GetFileName(model.ProductImage)), "image");
         }
         [AllowAnonymous]
-        public ActionResult Prodtucts(int id)
+        public ActionResult Products(int id)
         {
             var model = _uow.Products.List(p => p.CategoryId == id);
            return View(model);

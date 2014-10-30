@@ -1,0 +1,371 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    @*<link rel="shortcut icon" href="favicon.png">*@
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="~/Content/main.css" rel="stylesheet">
+
+    <!-- mobile css -->
+    <link href="~/Content/responsive.css" rel="stylesheet">
+
+    <!-- FontAwesome Support -->
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css" />
+    <!-- FontAwesome Support -->
+    <!-- Btns -->
+    <link rel="stylesheet" type="text/css" href="~/Content/btn.css" />
+    <!-- Btns -->
+    <!-- Superfish menu -->
+    <link rel="stylesheet" type="text/css" href="~/Content/superfish/superfish.css" />
+    <!-- Superfish menu -->
+    <!-- Theme Color selector -->
+    <link href="~/Scripts/theme-color-selector/theme-color-selector.css" type="text/css" rel="stylesheet">
+    <!-- Theme Color selector -->
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/owl-carousel/owl.carousel.css" />
+    <!-- Owl Carousel -->
+    <!-- Twitter feed -->
+    <link rel="stylesheet" type="text/css" href="~/Content/twitterfeed.css" />
+    <!-- Twitter feed -->
+    <!-- Typicons -->
+    <link rel="stylesheet" type="text/css" href="~/Content/typicons/typicons.min.css" />
+    <!-- Typicons -->
+    <!-- WOW animations -->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/wow/css/libs/animate.css" />
+    <!-- WOW animations -->
+    <!-- Forms -->
+    <link rel="stylesheet" type="text/css" href="~/Content/forms.css" />
+    <!-- Forms -->
+    <!-- Flickr feed -->
+    <link rel="stylesheet" type="text/css" href="~/Content/flickrfeed.css" />
+    <!-- Flickr feed -->
+    <!-- Pulse Slider -->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/pulse/pm-slider.css" />
+    <!-- Pulse Slider
+      <!-- Woocommerce -->
+    <link rel="stylesheet" type="text/css" href="~/Content/woocommerce-custom.css" />
+    <!-- Woocommerce -->
+    <!-- Development Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Cantata+One%7COpen+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- Development Google Fonts -->
+    <title>VIENNA :: Premium Restaurant Template</title>
+</head>
+<body>
+
+    <!-- Mobile Menu -->
+    <div class="pm-mobile-menu-overlay" id="pm-mobile-menu-overlay"></div>
+
+    <div class="pm-mobile-global-menu">
+
+        <div class="pm-mobile-global-menu-logo">
+            <a href="@Url.Action("Index", "Home")"><img src="~/Content/imges/SERA MACAW2.png" alt="Vienna Restaurant"></a>
+        </div>
+
+        <div class="pm-mobile-global-menu-search">
+            <form action="#" method="post">
+                <input name="" type="text" class="pm-search-field-mobile" placeholder="Type Keywords...">
+            </form>
+        </div>
+
+        <ul class="sf-menu pm-nav">
+
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>
+                <a href="#">Menus</a>
+                <ul>
+                    <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 })</li>
+                    <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 })</li>
+                    <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 })</li>
+                    <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 })</li>
+                    <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 })</li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+
+            @*<li>
+                    <a href="#">News</a>
+                    <ul>
+                        <li><a href="news.html">News Full Width</a></li>
+                        <li><a href="news-with-sidebar.html">News with Sidebar</a></li>
+                    </ul>
+                </li>*@
+            <li>
+                <a href="#">Locations</a>
+                <ul>
+                    <li><a href="store.html">Browse Store</a></li>
+                    @*<li><a href="cart.html">View Cart</a></li>*@
+                    <!--<li><a href="#">Customer Login</a></li>-->
+                </ul>
+            </li>
+            <li><a href="catering.html">Franchising</a></li>
+
+        </ul>
+
+    </div><!-- /pm-mobile-nav-overlay -->
+    <!-- Theme color selector -->
+    <!-- Theme color selector -->
+
+
+    <div id="pm_layout_wrapper" class="pm-full-mode">
+        <!-- Use wrapper for wide or boxed mode -->
+        <!-- Search overlay -->
+        <div class="pm-search-container" id="pm-search-container">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <form action="#" method="post">
+                            <input name="pm_search_field" type="text" class="pm-search-field-header" placeholder="Type Keywords...">
+                        </form>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <ul class="pm-search-controls">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#" id="pm-search-collapse"><i class="fa fa-times"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Search overlay end -->
+        <!-- Sub-header -->
+        <div class="pm-sub-menu-container">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+
+                        <div class="pm-sub-menu-info">
+                            <p class="pm-address"><i class="fa fa-map-marker"></i> 21 Dr.Zaki Hassan Street,Cairo,Egypt</p>
+                            <p class="pm-contact" style="margin-left: 6px;"><i class="fa fa-mobile-phone"></i> 02 226 065 59</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-5 col-md-5 col-sm-6" style="margin-left: 165px;">
+                        <ul class="pm-sub-navigation">
+
+                            @*<div class="pm-dropdown pm-language-selector-menu">
+                                    <div class="pm-dropmenu">
+                                        <p class="pm-menu-title">Language</p>
+                                        <i class="fa fa-angle-down"></i>
+                                    </div>
+                                    <div class="pm-dropmenu-active">
+                                        <ul>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Italian</a></li>
+                                        </ul>
+                                    </div>
+                                </div>*@
+
+
+                            <li>@Html.ActionLink("About Us", "About", "Home", new { style = "margin-right: 11px;" })</li>
+                            <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Career", "About", "Home", new { style = "margin-left: -5px;" })</li>
+                            @*<li class="pm-search-btn-li"><a href="#" class="pm-search-btn" id="pm-search-btn"><i class="fa fa-search"></i></a></li>
+                                <li class="pm-cart-btn-li"><a href="cart.html" class="pm-cart-btn"><i class="fa fa-shopping-cart"></i></a></li>*@
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /Sub-header -->
+        <!-- Main navigation -->
+        <header>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+
+                        <div class="pm-header-logo-container">
+                            <a href="@Url.Action("Index","Home")"><img src="~/Content/imges/SERA MACAW2.png" class="img-responsive pm-header-logo" alt="Vienna Restaurant"></a>
+                        </div>
+
+                        <div class="pm-header-mobile-btn-container">
+                            <!--<button type="button" class="navbar-toggle pm-main-menu-btn" id="pm-main-menu-btn" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>-->
+                            <button type="button" class="navbar-toggle pm-main-menu-btn" id="pm-mobile-menu-trigger"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 col-sm-8 pm-main-menu">
+
+                        <nav class="navbar-collapse collapse">
+
+                            <ul class="sf-menu pm-nav">
+
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>
+                                    <a href="#">Menus</a>
+                                    <ul>
+                                        <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 }, new { })</li>
+                                        <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { })</li>
+                                        <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { })</li>
+                                        <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { })</li>
+                                        <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { })</li>
+                                    </ul>
+                                </li>
+                                <li><a href="gallery.html">Gallery</a></li>
+
+                                <li>
+                                    <a href="#">Locations</a>
+                                    <ul>
+                                        <li><a href="store.html">Browse Store</a></li>
+                                        <li><a href="cart.html">View Cart</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="catering.html">Franchising</a></li>
+
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- /Main navigation -->
+        <!-- SLIDER AREA -->
+        <!-- SLIDER AREA end -->
+        <!-- BODY CONTENT starts here -->
+        <div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+
+    
+
+        </div>
+        <div style="width: 600px">
+            <p >PRIVACY POLICY</p>
+            Updated as of June 1, 2014
+            MHG Corp. or any of its affiliates or subsidiaries., is committed to protecting the privacy of certain data that is collected from you and that you submit when you access this web site or other web sites and/or mobile applications under our operation and control (collectively, the “Website”). We recognize the sensitive nature of much of the information with which we are entrusted on a daily basis, and we are committed to the highest standards of privacy. The following outline is intended to familiarize you with our policies for the gathering, use, maintenance and protection of private information. The examples given are intended to be for illustrative purposes only, and therefore, should not be considered a complete representation of our practices.
+            Please review this policy carefully. MHG Corp reserves the right to change its privacy policy at any time. Changes will be effective immediately upon posting a revised policy to the Website. You are responsible for reviewing this Privacy Policy. By accessing the Website, you are indicating your agreement to MHG brand’s Privacy Policy.
+            INFORMATION COLLECTED.
+            As you are probably aware, in the course of our relationship with you, we may collect information from a variety of sources. We collect this information in order to carry out our business functions and provide the highest quality of service to you. Most of our information comes directly from you. Generally, you may visit the Website without providing MHG Brands with any personally identifiable information. We collect personally identifiable information about you only if you voluntarily provide it to us and you have the option not to provide any personally identifiable information to us. You may voluntarily provide to us personally identifiable information such as your name, address, email, phone number and other contact information when you contact MHG Brands, submit a request to MHG Brands, fill out feedback or survey forms, enter contests or sweepstakes, register for a loyalty program, or subscribe to mailings or notices concerning MHG Brands or our products. If you submit a request for a franchise, we will also collect certain financial information and business background information from you, but we will only use your personally identifiable information to process your request. If you apply for a job with us online, we will collect your personally identifiable information that you submit to us in connection with your job application, but we will only use that information to process your request. We may also collect other personally identifiable information that you choose to include in any communications that you send to us. We may use your personally identifiable information to respond to your requests for information; to administer surveys, loyalty programs, contests and sweepstakes; to provide you with information and/or mailings or notices that you have requested; to provide you with notices regarding products that may be of interest to you; and to improve the content and general administration of the Website. If you request that MHG Brands send certain information or a greeting to a friend, we may ask you to submit your friend's email address and we will only use this email address to send the requested information or greeting.
+            MHG Brands may compile statistical information concerning the usage of the Website. This information allows MHG Brands to monitor its utilization and continuously improve its quality. Examples of this information would include, but not be limited to, the number of visitors to the Website, or to sections or pages within the Website, patterns of traffic flowing through the Website, length of time spent on the Website, or in sections or pages of the Website, the other sites that refer or transfer visitors to the Website, the pages of the Website that visitors frequently use as entry and exit points, utilization of the browser and operating systems and versions used by visitors to the Website, etc.
+            In order to compile this information, MHG Brands may collect and store your IP address, your operating system version, your browser version, the pages you visit within the Website, the length of time you spend on pages within the Website, the site from which you linked to ours, search terms you used in search engines which resulted in you linking to the Website, etc. While all of this information can be associated with the IP address your computer had while you visited the Site, it will not be associated with you as an individual, or associated with any other information you may submit through the Website, or MHG Brands may store about you for any other purposes.
+            MHG Brands may use web site “cookies” in the process of compiling the statistical information mentioned above and to tailor certain pages of the Website for your browsing convenience. You have the option of setting your browser to reject cookies, but the Website may not function correctly if you do. Refer to the Help feature of your browser for information on disabling cookies.
+            The Website is not directed to children. MHG Brands does not knowingly collect any personal information from children under the age of 13 without verifiable parental consent. Should we receive notice that we have collected such information from a child under the age of 13, without verifiable parental consent, we will promptly delete that information from our customer database. If you are concerned about your child’s use of the Website, you may use web-filtering technology to supervise or limit access to the Website.
+            DISCLOSURE OF INFORMATION.
+            In the course of our normal business activities, we may disclose collected information to both affiliates and non-affiliated entities, as we deem necessary. For example, we may provide your personally identifiable information to our Website hosting company that assists us in operating the Website or to a third-party service provider to provide marketing or advertising on our behalf. We will not disclose your information for any purposes other than those in conjunction with the business activities requested of us unless otherwise permitted or required by law, regulation or other government authority or to prevent harm to yourself or others. Additionally, we may disclose your personally identifiable information, in our sole discretion, to law enforcement agencies to assist in any investigation. In addition, we may transfer this information to a successor entity on a merger, consolidation or other corporate reorganization in which MHG Brands participates or to a purchaser of all or substantially all of MHG Brands' assets related to this Site. Any successor entity will be bound by the terms of this Privacy Policy. The business activities include the provision of accounting, financial and other related services and performing other essential functions of our business. Affiliated entities are within MHG Brands’ family of companies, while non-affiliated entities are those outside of MHG Brands’ family of companies with which we conduct our activities. We endeavor to choose non-affiliates with similar standards to ours regarding the protection of private information.
+            MHG Brands generally does not require collected information to obtain access to any area of the Website. However, if you decide to provide personal information to MHG Brands, in no case will MHG Brands sell, license or transmit that information to third parties, except as required or permitted by law. Any information that you voluntarily share with MHG Brands in a form is kept strictly confidential and fully secure.
+            CORRECTION/UPDATING PERSONALLY IDENTIFIABLE INFORMATION.
+            MHG Brands provides you with the ability to correct or delete any of the personally identifiable information that you have provided to us. If you wish to correct or delete any information you have provided to us, you may contact us by email at: contactus@mhgsite.com or by mail at: 21 Dr. Zaki Hassan St, Nasrcity, Cairo-Egypt 11511.
+            If you have questions or comments regarding MHG Brands' privacy practices, you can contact us at: contactus@mhgsite.com. We will be sure to address your concerns.
+            SAFEGUARDING OF INFORMATION.
+            Our employees are trained to understand the importance of confidentiality and are required to adhere to our privacy policies and procedures. Employees who violate these policies and procedures are subject to disciplinary action. We may employ numerous procedural and technological measures, consistent with industry practice to protect against the disclosure of information for purposes unrelated to the performance of our business functions or to individuals other than those who must use it in the course of their work activities. These practices may include the use of password protection of computer files, e-mail and voice-mail, video surveillance, and other physical, electronic, and procedural safeguards.
+            FOR SERA MACAW’S ONLY.
+            SERA MACAW Program offers mobile access to various coupons, promotions, and other announcements over SMS. Enrollment can be achieved in two ways: (i) providing your mobile phone number upon enrollment in the SMS program (available at http://seramacaw.fbmta.com/members/UpdateProfile.aspx?Action=Subscribe&inputsource=w) or (ii) texting either keyword “PRETZEL” or “PERKS” to 21333. For mobile enrollments, the mobile phone number's verification message & data rates apply. Users will be allowed to opt-out of this program at any time. Message frequency is approximately two times per month. Standard text rates apply. You can contact us at 2+22606559 with questions about the Sera Macaw’s SMS Program or any of Sera Macw’s products or stores! If you have specific questions about the text messaging program, text “HELP” to: Mobile 21333. To Stop Participation in the Mobile SMS Program: To stop the messages coming to your phone, you can opt out of the program via SMS. Just text the word "STOP" to: Mobile 21333). You'll receive a one-time opt-out confirmation text message. After that, you will receive no future messages via SMS.
+            Sera Macaw's FANatics: Guidelines and Terms of Use
+            The first name and last name initial, the city, state/providence, country, and age of the Sera Macaw's Fan submitting a photo for the Sera Macaw's FANatics program must be submitted along with any photo posted to Sera Macaw's Fan Page. Explicit parental consent is required for a photo featuring any individual under the age of 13. Inclusion of an Sera Macaw's product is recommended, and any depiction of the product should be in appropriate, non-offensive manner. Photos which feature abusive, defamatory, or obscene content shall be immediately removed. If individuals other than the person submitting the photo are featured, the Sera Macaw's Fan submitting the photo must have the permission to use the photo by the individual (or his or her parent or legal guardian’s permission, if individual is a minor). An Sera Macaw's FANatic will be selected from time to time. Adherence to these guidelines will be confirmed prior to the selected photo being featured as the profile picture on the Sera Macaw's Facebook page.
+            Submitting Recipes: Guidelines and Terms of Use
+            We are accepting recipes that use Sera Macaw's® At-Home TM Baking Kit. These submissions must be recipes that you have already tested and know work! If Sera Macaw's publishes your recipe, you will receive a coupon valid at any of our domestic Sera Macaw's locations in appreciation of your efforts. Please note, recipes are published at the sole discretion of Sera Macaw's, Corp. Recipes may need to be edited before publishing. By submitting a recipe featuring Sera Macaw's At-Home Baking Kit, you hereby grant Auntie Anne's permission to publish all aspects of the recipe, in any and all media worldwide, known or unknown, without limitation or compensation to you and to use the submitted recipe for any purpose, including but not limited to product development, marketing, and promotional opportunities. Complete names of authors of recipes are not published (first name and city only.)
+            ***
+            UNDER NO CIRCUMSTANCES SHALL MHG BRANDS HAVE ANY LIABILITY WHATSOEVER FOR ANY ERRORS OR OMISSIONS IN INFORMATION ON THE WEBSITE, OR FOR ANY DAMAGES, LOSSES, OR EXPENSES THAT MAY OCCUR WHILE ACCESSING THE WEBSITE, OR ANY LINKED SITE, OR THE INABILITY TO ACCESS THESE SITES; OR ANY FAILURE OF PERFORMANCE, ERROR, OMISSION, INTERRUPTION, DEFECT, DELAY IN OPERATION OR TRANSMISSION, COMPUTER VIRUS OR LINE OR SYSTEM FAILURE; OR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT OR SPECIAL DAMAGES ARISING OUT OF THE BREACH OF THIS PRIVACY POLICY, HOWEVER OCCASIONED.
+        </div>
+
+
+        @*<footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="pm-footer-social-info-container">
+                            <h6>Follow us </h6>
+                            <ul class="pm-footer-social-icons">
+                                <li title="Twitter" class="pm_tip_static_top"><a href="#"><i class="fa fa-twitter tw"></i></a></li>
+                                <li title="Facebook" class="pm_tip_static_top"><a href="#"><i class="fa fa-facebook fb"></i></a></li>
+                                <li title="Google Plus" class="pm_tip_static_top"><a href="#"><i class="fa fa-google-plus gp"></i></a></li>
+                                <li title="Linkedin" class="pm_tip_static_top"><a href="#"><i class="fa fa-linkedin linked"></i></a></li>
+                                <li title="YouTube" class="pm_tip_static_top"><a href="#"><i class="fa fa-youtube yt"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div style="margin-left:149px" class="pm-footer-subscribe-container">
+                            <h6 style="margin-left: 287px">Welcome !</h6>
+
+                            <div class="pm-footer-subscribe-form-container">
+                                <form action="#" method="post" id="pm-footer-subscribe">
+                                    <input class="pm-footer-subscribe-field" type="text" placeholder="Email Address" value="" />
+                                    <div class="pm-footer-subscribe-submit-btn">
+                                        <i class="fa fa-paper-plane"></i>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>*@
+
+        <div class="pm-footer-copyright">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12 pm-footer-copyright-col">
+                        <p>© 2014 sera macaw Cop. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12 pm-footer-navigation-col">
+                        <ul class="pm-footer-navigation" id="pm-footer-nav">
+
+                            <li><a href="menus.html">Terms Of Use</a></li>
+                            <li><a href="gallery.html">Privacy Policy</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- /pm_layout-wrapper -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/jquery.viewport.mini.js"></script>
+    <script src="~/Scripts/jquery.easing.1.3.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/modernizr.custom.js"></script>
+    <script src="~/Scripts/owl-carousel/owl.carousel.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script src="~/Scripts/jquery.tooltip.js"></script>
+    <script src="~/Scripts/jquery.hoverPanel.js"></script>
+    <script src="~/Scripts/superfish/superfish.js"></script>
+    <script src="~/Scripts/superfish/hoverIntent.js"></script>
+    <script src="~/Scripts/tinynav.js"></script>
+    <script src="~/Scripts/stellar/jquery.stellar.js"></script>
+    <script src="~/Scripts/countdown/countdown.js"></script>
+    <script src="~/Scripts/theme-color-selector/theme-color-selector.js"></script>
+    <script src="~/Scripts/wow/wow.min.js"></script>
+    <script src="~/Scripts/pulse/jquery.PMSlider.js"></script>
+
+
+    <p id="back-top" class="visible-lg visible-md visible-sm"> </p>
+</body>
+</html>

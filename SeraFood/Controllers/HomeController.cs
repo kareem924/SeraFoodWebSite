@@ -58,5 +58,10 @@ namespace SeraFood.Controllers
 
             return View();
         }
+
+        public ActionResult Privcy()
+        {
+            return View();
+        }
     }
 }

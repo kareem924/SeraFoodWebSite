@@ -12,9 +12,9 @@
 
             <!-- FULL WIDTH slides -->
             <li data-thumb="~/Content/imges/slider/1a.jpg" class="pmslide_0">
-                <img src="~/Content/imges/slider/slide1.jpg" alt="img01" />
+                <img src="~/Content/imges/slider/cateringseramacaw2.jpg" alt="img01" />
 
-                <div class="pm-holder">
+                @*<div class="pm-holder">
                     <div class="pm-caption">
                         <h1><span>Welcome to Vienna</span></h1>
                         <span class="pm-caption-decription">
@@ -22,14 +22,14 @@
                         </span>
                         <a href="menus.html" class="pm-slide-btn animated">View our menus <i class="fa fa-chevron-right"></i></a>
                     </div>
-                </div>
+                </div>*@
 
             </li>
 
             <li data-thumb="~/Content/imges/slider/2a.jpg" class="pmslide_1">
-                <img src="~/Content/imges/slider/slide2.jpg" alt="img02" />
+                <img src="~/Content/imges/slider/field-trip1.jpg" alt="img02" />
 
-                <div class="pm-holder">
+                @*<div class="pm-holder">
                     <div class="pm-caption">
                         <h1><span>Witness the beauty</span></h1>
                         <span class="pm-caption-decription">
@@ -38,14 +38,14 @@
                         <a href="gallery.html" class="pm-slide-btn animated">View our Gallery <i class="fa fa-chevron-right"></i></a>
 
                     </div>
-                </div>
+                </div>*@
 
             </li>
 
             <li data-thumb="~/Content/imges/slider/3a.jpg" class="pmslide_2">
-                <img src="~/Content/imges/slider/slide3.jpg" alt="img02" />
+                <img src="~/Content/imges/slider/DSCN4940.jpg" alt="img02" />
 
-                <div class="pm-holder">
+                @*<div class="pm-holder">
                     <div class="pm-caption">
                         <h1><span>Book with us!</span></h1>
                         <span class="pm-caption-decription">
@@ -54,7 +54,7 @@
                         <a href="book-an-event.html" class="pm-slide-btn animated">Book Your Event Now <i class="fa fa-chevron-right"></i></a>
 
                     </div>
-                </div>
+                </div>*@
 
             </li>
 
@@ -66,47 +66,48 @@
 <div class="container pm-containerPadding-top-90">
     <div class="row">
 
-        <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-column-spacing">
+        <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-column-spacing" >
 
             <div class="pm-image-container">
-                <img src="/Content/imges/home/image1.jpg" alt="image1">
+                <img src="/Content/imges/home/SERA MACAW1.jpg" alt=" image1">
             </div>
 
-            <h6>say hello to vienna</h6>
+            <h6>say hello to SERAMACAW</h6>
 
-            <p>A powerful restaurant theme for restaurants, bars and catering companies.</p>
+            <p>A powerful team of Sera Macaw is just for you.<br /> Our goal is your delights.</p>
 
-            <a href="about-us.html" class="pm-rounded-btn animated pm-primary">learn more about us <i class="fa fa-angle-right"></i></a>
+            <a href="@Url.Action("About")" class="pm-rounded-btn animated pm-primary">learn more about us <i class="fa fa-angle-right"></i></a>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-column-spacing" style="margin-top: -29px;">
+
+            <div class="pm-image-container">
+                <img src="~/Content/imges/home/SERA MACAW3.jpg" alt="image3">
+            </div>
+
+            <h6>Join US</h6>
+
+            <p>Our corporate job positions take ownership and responsibility in seramacaw’s, and all that we stand for.</p>
+
+            <a href="@Url.Action("Career")" class="pm-rounded-btn animated pm-primary">Career<i class="fa fa-angle-right"></i></a>
 
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-column-spacing">
 
             <div class="pm-image-container">
-                <img src="~/Content/imges/home/image2.jpg" alt="image2">
+                <img src="~/Content/imges/home/222221111.jpg" style="height: 173px" alt="image2">
             </div>
 
-            <h6>we serve authentic cuisine</h6>
+            <h6>We are Listening</h6>
 
-            <p>Come experience Vienna for yourself...we’ve been told it’s an unforgettable experience</p>
+            <p>The story begins with two, Sera Macaw and you.<br/>We are here to serve you</p>
 
-            <a href="menus.html" class="pm-rounded-btn animated pm-primary">View our Menus <i class="fa fa-angle-right"></i></a>
+            <a href="@Url.Action("Contact")" class="pm-rounded-btn animated pm-primary">Contact US <i class="fa fa-angle-right"></i></a>
 
         </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-column-spacing">
-
-            <div class="pm-image-container">
-                <img src="~/Content/imges/home/image3.jpg" alt="image3">
-            </div>
-
-            <h6>take home the pleasure</h6>
-
-            <p>Visit our shop and browse some of our famous spices and sauces.</p>
-
-            <a href="store.html" class="pm-rounded-btn animated pm-primary">visit our store <i class="fa fa-angle-right"></i></a>
-
-        </div>
+       
 
     </div>
 </div>
@@ -121,19 +122,31 @@
 
                 <!-- Featured panel header -->
                 <div class="pm-featured-header-title-container menus">
-                    <p class="pm-featured-header-title">Featured Dishes</p>
-                    <p class="pm-featured-header-message">Browse some of the best dishes on our menu</p>
+                    <p class="pm-featured-header-title">Make Your Own Delights</p>
+                    <p class="pm-featured-header-message"></p>
+                    <div class="pm-isotope-filter-container">
+                        <ul class="pm-isotope-filter-system">
+                            <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
+                            <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 }, new { id = "sera" ,@class="current"})</li>
+                            <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { id = "macaw", @class = "current" })</li>
+                            <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { id = "unique", @class = "current" })</li>
+                            <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { id = "orange", @class = "current" })</li>
+                            <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { id = "Signature", @class = "current" })</li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- Featured panel header end -->
                 <!-- Filter menu -->
-                <div class="pm-isotope-filter-container">
+                @*<div class="pm-isotope-filter-container">
                     <ul class="pm-isotope-filter-system">
                         <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-                        <li><a href="#" class="current">Breakfast</a></li>
-                        <li><a href="menus.html">Lunch</a></li>
-                        <li><a href="menus.html">Dinner</a></li>
+                        <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 },new{id="sera"})</li>
+                        <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { id = "macaw" })</li>
+                        <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { id = "unique" })</li>
+                        <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { id = "orange" })</li>
+                        <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { id = "Signature" })</li>
                     </ul>
-                </div>
+                </div>*@
                 <!-- Filter menu end -->
 
             </div>
@@ -192,8 +205,113 @@
     </div>
 </div>
 <!-- Menu filter system end -->
-<!-- Upcoming events filter system -->
-<div class="container pm-containerPadding-top-50 pm-containerPadding-bottom-30">
+<!-- Upcoming events filter system 
+  <!-- Staff filter system -->
+        <div class="container pm-containerPadding-top-60 pm-containerPadding-bottom-60">
+        	<div class="row">
+            
+                <div class="col-lg-12 pm-containerPadding-bottom-40">
+                	
+                    <div class="pm-featured-header-container">
+                    
+                    	<!-- Featured panel header -->
+                        <div class="pm-featured-header-title-container news">
+                        	<p class="pm-featured-header-title">Meet Us</p>
+                            <p class="pm-featured-header-message"></p>
+                            <div class="pm-isotope-filter-container">
+                                <ul class="pm-isotope-filter-system">
+                                    <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
+                                    <li><a href="#" class="current">Top Managment</a></li>
+                                    <li><a href="#" class="current">Supervisory board</a></li>
+                                    <li><a href="#" class="current">Values</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Featured panel header end -->
+                        
+                        <!-- Filter menu -->
+                      
+                        <!-- Filter menu end -->
+                    
+                    </div>
+                    
+                </div><!-- /.col-lg-12 -->
+                
+                <!-- staff item -->
+                <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
+                    <div class="pm-staff-item-container">
+                    	<div class="pm-staff-item-img-container" style="background-image: url(/Content/imges/staff/staff1.jpg)">
+                        	<span></span>
+                        	<div class="pm-staff-item-img-quote">
+                            	<p>Work hard and play hard...its essential for success!</p>
+                            </div>
+                           
+                        </div>
+                        
+                        <div class="pm-staff-item-desc">
+                        	<p class="pm-staff-item-name">Mustafa Hashem</p>
+                            <p class="pm-staff-item-title">Chief Executive Officer (CEO)</p>
+                            
+                          
+                            
+                        </div>
+                    </div>
+                    
+                </div><!-- /.col-lg-4 -->
+                <!-- /staff item -->
+                
+                <!-- staff item -->
+                <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
+                    <div class="pm-staff-item-container">
+                    	<div class="pm-staff-item-img-container" style="background-image: url(/Content/imges/staff/photo1.png); ">
+                        	<span></span>
+                        	<div class="pm-staff-item-img-quote">
+                            	<p>Work hard and play hard...its essential for success!</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pm-staff-item-desc">
+                        	<p class="pm-staff-item-name">Abdelrhman Hashem </p>
+                            <p class="pm-staff-item-title">Vice-CEO</p>
+                            
+                          
+                            
+                        </div>
+                    </div>
+                    
+                </div><!-- /.col-lg-4 -->
+                <!-- /staff item -->
+                
+                <!-- staff item -->
+                <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
+                    <div class="pm-staff-item-container">
+                    	<div class="pm-staff-item-img-container" style="background-image:url(/Content/imges/staff/staff3.jpg);">
+                        	<span></span>
+                        	<div class="pm-staff-item-img-quote">
+                            	<p>Work hard and play hard...its essential for success!</p>
+                            </div>
+                          
+                        </div>
+                        
+                        <div class="pm-staff-item-desc">
+                        	<p class="pm-staff-item-name">Ahmed Hashem</p>
+                            <p class="pm-staff-item-title">Chairman</p>
+                            
+                           
+                            
+                         
+                            
+                        </div>
+                    </div>
+                    
+                </div><!-- /.col-lg-4 -->
+                <!-- /staff item -->
+                
+            </div>
+        </div>
+        <!-- Staff filter system end -->
+    @*<div class="container pm-containerPadding-top-50 pm-containerPadding-bottom-30">
     <div class="row">
 
         <div class="col-lg-12 pm-containerPadding-bottom-40">
@@ -291,7 +409,7 @@
         <!-- /Event item -->
 
     </div>
-</div>
+</div>*@
 <!-- Upcoming events filter system end -->
 <!-- News filter system -->
 <div class="container pm-containerPadding-top-30 pm-containerPadding-bottom-90">
@@ -303,8 +421,8 @@
 
                 <!-- Featured panel header -->
                 <div class="pm-featured-header-title-container news">
-                    <p class="pm-featured-header-title">Latest News</p>
-                    <p class="pm-featured-header-message">Bringing you the latest in cuisine and culture</p>
+                    <p class="pm-featured-header-title">Be a part of sera macaw</p>
+                 
                 </div>
                 <!-- Featured panel header end -->
 
@@ -316,28 +434,33 @@
 
             <div class="pm-news-post-container">
 
-                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/p3.jpg'); ">
+                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/career_250x251.jpg'); ">
                     <div class="pm-news-post-title">
-                        <p>Sed finibus est non turpis condimentum scelerisque vivamus</p>
+                        <p>Start your business now and build your own sera macaw store</p>
                     </div>
                 </div>
 
                 <div class="pm-news-post-meta-container">
                     <div class="pm-news-post-date">
-                        <p class="day">05</p>
-                        <p class="month-year">Jul<br />2014</p>
-                    </div>
-                    <ul class="pm-meta-options-list">
+                        <p class="day">Get a</p>
+                        <p class="day" style="font-size: 29px;">frenchise</p>
+
+</div>
+                    @*<ul class="pm-meta-options-list">
                         <li><i class="fa fa-comment"></i> &nbsp;0 Comments</li>
                         <li><i class="fa fa-heart"></i> &nbsp;<a href="#">Like this</a></li>
                         <li><i class="fa fa-twitter"></i> &nbsp;<a href="#">Tweet this</a></li>
                         <li><i class="fa fa-pencil"></i> &nbsp;<a href="#">Post a comment</a></li>
-                    </ul>
+                    </ul>*@
                 </div>
 
                 <div class="pm-news-post-desc-container">
 
-                    <p class="pm-news-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet purus consectetur, rhoncus urna eget, semper sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet purus consectetur, rhoncus urna eget, semper sapien <a href="#">{...}</a></p>
+                    <p class="pm-news-post-excerpt">It's the lines of people hungry for a fresh, hot, golden brown soft pretzel from sera macaw chain.
+
+It's the collaborative spirit of a company that sees the value brought by every one of its franchisees and employees, a spirit demonstrated by the respectful  
+
+<a href="#">{...}</a></p>
                     <p class="pm-news-post-continue"><a href="single-post.html">Continue Reading &rarr;</a></p>
 
                 </div>
@@ -351,7 +474,7 @@
 
             <div class="pm-news-post-container">
 
-                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/p5.jpg');">
+                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/best-career-apps.jpg');">
                     <div class="pm-news-post-title">
                         <p>Donec lorem velit, convallis nec ullamcorper at commodo </p>
                     </div>

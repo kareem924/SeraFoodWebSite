@@ -245,6 +245,34 @@
     <Content Include="Content\imges\events\item2.jpg" />
     <Content Include="Content\imges\events\item3.jpg" />
     <Content Include="Content\imges\events\_notes\dwsync.xml" />
+    <Content Include="Content\imges\home\222221111.jpg" />
+    <Content Include="Content\imges\home\22222a.jpg" />
+    <Content Include="Content\imges\home\2222a2.jpg" />
+    <Content Include="Content\imges\home\SERA MACAW.001.png" />
+    <Content Include="Content\imges\home\SERA MACAW.jpg" />
+    <Content Include="Content\imges\home\SERA MACAW.png" />
+    <Content Include="Content\imges\home\SERA MACAW1.jpg" />
+    <Content Include="Content\imges\home\SERA MACAW1111.jpg" />
+    <Content Include="Content\imges\home\SERA MACAW3.jpg" />
+    <Content Include="Content\imges\panels\1001696_551421161583556_399273154_n.jpg" />
+    <Content Include="Content\imges\panels\cateringsera.jpg" />
+    <Content Include="Content\imges\panels\cateringseramacaw2.jpg" />
+    <Content Include="Content\imges\panels\cinnabon-kit-large.jpg" />
+    <Content Include="Content\imges\panels\Cinnamon1-618x250.jpg" />
+    <Content Include="Content\imges\panels\franchise-page-hero.jpg" />
+    <Content Include="Content\imges\panels\franchise-page-hero1.jpg" />
+    <Content Include="Content\imges\panels\img_8458.jpg" />
+    <Content Include="Content\imges\panels\o-CINNABON-facebook.jpg" />
+    <Content Include="Content\imges\panels\pretzel-kit-large.jpg" />
+    <Content Include="Content\imges\panels\pretzel-nugget-kit-large.jpg" />
+    <Content Include="Content\imges\panels\SERAMACAW007.png" />
+    <Content Include="Content\imges\posts\best-career-apps.jpg" />
+    <Content Include="Content\imges\posts\career_250x251.jpg" />
+    <Content Include="Content\imges\slider\cateringsera.jpg" />
+    <Content Include="Content\imges\slider\cateringseramacaw2.jpg" />
+    <Content Include="Content\imges\slider\cinnabon-kit-large.jpg" />
+    <Content Include="Content\imges\slider\DSCN4940.jpg" />
+    <Content Include="Content\imges\slider\field-trip.jpg" />
     <Content Include="Content\imges\flickr\1.jpg" />
     <Content Include="Content\imges\flickr\10.jpg" />
     <Content Include="Content\imges\flickr\11.jpg" />
@@ -297,6 +325,8 @@
     <Content Include="Content\imges\slider\1a.jpg" />
     <Content Include="Content\imges\slider\2a.jpg" />
     <Content Include="Content\imges\slider\3a.jpg" />
+    <Content Include="Content\imges\slider\field-trip1.jpg" />
+    <Content Include="Content\imges\slider\field-trip11.jpg" />
     <Content Include="Content\imges\slider\slide1.jpg" />
     <Content Include="Content\imges\slider\slide2.jpg" />
     <Content Include="Content\imges\slider\slide3.jpg" />
@@ -870,7 +900,8 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Scripts\owl-carousel\.DS_Store" />
     <Content Include="Views\Categories\Category.cshtml" />
-    <Content Include="Views\Product\Prodtucts.cshtml" />
+    <Content Include="Views\Home\Privcy.cshtml" />
+    <None Include="Views\Product\Products.cshtml" />
     <Content Include="Views\Product\ProductItem.cshtml" />
   </ItemGroup>
   <ItemGroup>

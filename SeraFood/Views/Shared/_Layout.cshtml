@@ -82,34 +82,27 @@
                     <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 })</li>
                     <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 })</li>
                     <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 })</li>
-                    <li>@Html.ActionLink("Segneture", "Category", "Categories", new { id = 5 })</li>
+                    <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 })</li>
                 </ul>
             </li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li>
-                <a href="#">Events</a>
-                <ul>
-                    <li><a href="book-an-event.html">Book an Event</a></li>
-                    <li><a href="events.html">Browse Events</a></li>
-                    <!--<li><a href="#">Social Events</a></li>-->
-                </ul>
-            </li>
-            <li>
+          
+            @*<li>
                 <a href="#">News</a>
                 <ul>
                     <li><a href="news.html">News Full Width</a></li>
                     <li><a href="news-with-sidebar.html">News with Sidebar</a></li>
                 </ul>
-            </li>
+            </li>*@
             <li>
-                <a href="#">Store</a>
+                <a href="#">Locations</a>
                 <ul>
                     <li><a href="store.html">Browse Store</a></li>
-                    <li><a href="cart.html">View Cart</a></li>
+                    @*<li><a href="cart.html">View Cart</a></li>*@
                     <!--<li><a href="#">Customer Login</a></li>-->
                 </ul>
             </li>
-            <li><a href="catering.html">Catering</a></li>
+            <li><a href="catering.html">Franchising</a></li>
 
         </ul>
 
@@ -154,7 +147,7 @@
 
                         <div class="pm-sub-menu-info">
                             <p class="pm-address"><i class="fa fa-map-marker"></i> 21 Dr.Zaki Hassan Street,Cairo,Egypt</p>
-                            <p class="pm-contact"><i class="fa fa-mobile-phone"></i> 02 226 065 59</p>
+                            <p class="pm-contact" style="margin-left: 6px;"><i class="fa fa-mobile-phone"></i> 02 226 065 59</p>
                         </div>
 
                     </div>
@@ -162,8 +155,8 @@
 
                     <div class="col-lg-5 col-md-5 col-sm-6" style="margin-left: 165px;">
                         <ul class="pm-sub-navigation">
-                            <li>
-                                <div class="pm-dropdown pm-language-selector-menu">
+                           
+                                @*<div class="pm-dropdown pm-language-selector-menu">
                                     <div class="pm-dropmenu">
                                         <p class="pm-menu-title">Language</p>
                                         <i class="fa fa-angle-down"></i>
@@ -174,11 +167,12 @@
                                             <li><a href="#">Italian</a></li>
                                         </ul>
                                     </div>
-                                </div>
-                            </li>
-
-                            <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                                </div>*@
+                         
+                           
+                            <li>@Html.ActionLink("About Us", "About", "Home", new { style = "margin-right: 11px;" })</li> 
                             <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Career", "About", "Home",new{style="margin-left: -5px;"})</li>
                             @*<li class="pm-search-btn-li"><a href="#" class="pm-search-btn" id="pm-search-btn"><i class="fa fa-search"></i></a></li>
                 <li class="pm-cart-btn-li"><a href="cart.html" class="pm-cart-btn"><i class="fa fa-shopping-cart"></i></a></li>*@
                         </ul>
@@ -225,33 +219,19 @@
                                         <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { })</li>
                                         <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { })</li>
                                         <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { })</li>
-                                        <li>@Html.ActionLink("Segneture", "Category", "Categories", new { id = 5 }, new { })</li>
+                                        <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { })</li>
                                     </ul>
                                 </li>
                                 <li><a href="gallery.html">Gallery</a></li>
+                               
                                 <li>
-                                    <a href="#">Events</a>
-                                    <ul>
-                                        <li><a href="book-an-event.html">Book an Event</a></li>
-                                        <li><a href="events.html">Browse Events</a></li>
-                                        <!--<li><a href="#">Social Events</a></li>-->
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">News</a>
-                                    <ul>
-                                        <li><a href="news.html">News Full Width</a></li>
-                                        <li><a href="news-with-sidebar.html">News with Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Store</a>
+                                    <a href="#">Locations</a>
                                     <ul>
                                         <li><a href="store.html">Browse Store</a></li>
                                         <li><a href="cart.html">View Cart</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="catering.html">Catering</a></li>
+                                <li><a href="catering.html">Franchising</a></li>
 
                             </ul>
 
@@ -280,8 +260,10 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12 pm-widget-footer">
                         <img src="~/Content/imges/SERA MACAW2.png" class="img-responsive" alt="Vienna Restaurant">
-                        <p>
-                            Vienna a premium restaurant theme designed for restaurant and bar owners. This theme features many practical elements such as a catering and event form, photo gallery, events system, blog system and a menu system. Vienna is also WordPress and Woocommerce ready and is designed on an 1170 grid for bootstrap 3.
+                        <p style="margin-top: 29px;">
+                            “ Sera macaw`s shops is aiming to be a friendly place that you can eat drink what makes you feel relax and freshly. It is in the fast casual category with an emphasis upon the freshness of our products and our product that will be baked daily inside the lounge. Our lounges will locate in high-traffic venues such as lifestyle centers, shopping strip malls, airports, universities, and travel places”
+
+                           
                         </p>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 pm-widget-footer">
@@ -461,7 +443,7 @@
 
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="pm-footer-social-info-container">
-                            <h6>Follow us and stay connected!</h6>
+                            <h6>Follow us </h6>
                             <ul class="pm-footer-social-icons">
                                 <li title="Twitter" class="pm_tip_static_top"><a href="#"><i class="fa fa-twitter tw"></i></a></li>
                                 <li title="Facebook" class="pm_tip_static_top"><a href="#"><i class="fa fa-facebook fb"></i></a></li>
@@ -474,12 +456,12 @@
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="pm-footer-subscribe-container">
-                            <h6>Subscribe to our newsletter</h6>
+                        <div style="margin-left:149px" class="pm-footer-subscribe-container">
+                            <h6 style="margin-left: 232px">Keep in touch !</h6>
 
                             <div class="pm-footer-subscribe-form-container">
                                 <form action="#" method="post" id="pm-footer-subscribe">
-                                    <input class="pm-footer-subscribe-field" type="text" placeholder="Email Address" value="" />
+                                    <input class="pm-footer-subscribe-field" type="text" placeholder="cell phone" value="" />
                                     <div class="pm-footer-subscribe-submit-btn">
                                         <i class="fa fa-paper-plane"></i>
                                     </div>
@@ -499,17 +481,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 pm-footer-copyright-col">
-                        <p>©2014 VIENNA. Produced by <a href="http://www.pulsarmedia.ca" target="_blank">Pulsar Media</a></p>
+                        <p>© 2014 sera macaw Cop. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-12 pm-footer-navigation-col">
                         <ul class="pm-footer-navigation" id="pm-footer-nav">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li><a href="menus.html">Menus</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="events.html">Browse Events</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="store.html">Store</a></li>
-                            <li><a href="catering.html">Catering</a></li>
+                           
+                            <li><a href="menus.html">Terms Of Use</a></li>
+                            <li><a href="gallery.html">Privacy Policy</a></li>
+             
                         </ul>
                     </div>
                 </div>
