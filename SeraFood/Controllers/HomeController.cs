@@ -22,6 +22,7 @@ namespace SeraFood.Controllers
 
             return View();
         }
+
         [HttpGet]
         public ActionResult Contact()
         {

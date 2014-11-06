@@ -167,14 +167,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JobsController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplyJob.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Job.cs" />
     <Compile Include="Models\MailForm.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Repositories\EfGenericRepository.cs" />
@@ -249,11 +252,17 @@
     <Content Include="Content\imges\home\22222a.jpg" />
     <Content Include="Content\imges\home\2222a2.jpg" />
     <Content Include="Content\imges\home\SERA MACAW.001.png" />
+    <Content Include="Content\imges\home\SERA MACAW.006.png" />
     <Content Include="Content\imges\home\SERA MACAW.jpg" />
     <Content Include="Content\imges\home\SERA MACAW.png" />
     <Content Include="Content\imges\home\SERA MACAW1.jpg" />
     <Content Include="Content\imges\home\SERA MACAW1111.jpg" />
     <Content Include="Content\imges\home\SERA MACAW3.jpg" />
+    <Content Include="Content\imges\home\SERA MACAWfran1.png" />
+    <Content Include="Content\imges\home\SERA MACAWGetJob.png" />
+    <Content Include="Content\imges\home\SERAMACAWFran.png" />
+    <Content Include="Content\imges\Job1.jpg" />
+    <Content Include="Content\imges\Job2.jpg" />
     <Content Include="Content\imges\panels\1001696_551421161583556_399273154_n.jpg" />
     <Content Include="Content\imges\panels\cateringsera.jpg" />
     <Content Include="Content\imges\panels\cateringseramacaw2.jpg" />
@@ -268,9 +277,13 @@
     <Content Include="Content\imges\panels\SERAMACAW007.png" />
     <Content Include="Content\imges\posts\best-career-apps.jpg" />
     <Content Include="Content\imges\posts\career_250x251.jpg" />
+    <Content Include="Content\imges\posts\sp-it-img.png" />
+    <Content Include="Content\imges\posts\sp-retail-img.png" />
     <Content Include="Content\imges\slider\cateringsera.jpg" />
     <Content Include="Content\imges\slider\cateringseramacaw2.jpg" />
     <Content Include="Content\imges\slider\cinnabon-kit-large.jpg" />
+    <Content Include="Content\imges\slider\csm_BOSS-Hugo-0097_16eee79f82.jpg" />
+    <Content Include="Content\imges\slider\csm_BOSS-Hugo-1.jpg" />
     <Content Include="Content\imges\slider\DSCN4940.jpg" />
     <Content Include="Content\imges\slider\field-trip.jpg" />
     <Content Include="Content\imges\flickr\1.jpg" />
@@ -401,6 +414,9 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\gothic-bg.png" />
+    <Content Include="fonts\gothic-thumb.png" />
+    <Content Include="fonts\gothic.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -428,6 +444,9 @@
     <Content Include="Scripts\ajax-eventform\class.phpmail.php" />
     <Content Include="Scripts\ajax-eventform\monofont.ttf" />
     <Content Include="Scripts\ajax-eventform\send_email.php" />
+    <Content Include="fonts\gothic.eot" />
+    <Content Include="fonts\gothic.ttf" />
+    <Content Include="fonts\gothic.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ajax-cateringform\ajax-catering-form.js" />
     <Content Include="Scripts\ajax-cateringform\_notes\dwsync.xml" />
@@ -901,11 +920,19 @@
     <Content Include="Scripts\owl-carousel\.DS_Store" />
     <Content Include="Views\Categories\Category.cshtml" />
     <Content Include="Views\Home\Privcy.cshtml" />
+    <Content Include="Views\Jobs\_CreateOrUpdate.cshtml" />
+    <Content Include="Views\Jobs\Create.cshtml" />
+    <Content Include="Views\Jobs\Edit.cshtml" />
+    <Content Include="Views\Jobs\Index.cshtml" />
+    <Content Include="Views\Jobs\CreateApplyJob.cshtml" />
+    <Content Include="Views\Jobs\Home.cshtml" />
+    <Content Include="Views\Jobs\Job.cshtml" />
     <None Include="Views\Product\Products.cshtml" />
     <Content Include="Views\Product\ProductItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\CV\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

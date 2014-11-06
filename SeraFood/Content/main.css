@@ -56,7 +56,11 @@ Fat Footer color: #44619d
 Body font color:#5f5f5f
 
 -------------------------------------------------------------------*/
-
+@font-face {
+	font-family: 'gothic';
+	src: url('/fonts/gothic.eot');
+	src: local('gothic'), url('/fonts/gothic.woff') format('woff'), url('/fonts/gothic.ttf') format('truetype');
+}
 /* 1. Box Modes  */
 
 /* full screen mode */
@@ -100,7 +104,7 @@ body {
 
 a {
 	color:#FFB100;
-	font-family:'Open sans';
+	font-family:'gothic';
 	font-weight:500;
 	text-decoration:none !important;
 	
@@ -116,14 +120,14 @@ a:hover {
 
 p { 
 	color:#5f5f5f;
-    font-family: 'Open Sans';
+    font-family: 'gothic';
     font-size: 13px;
     font-weight: 500;
     line-height: 24px;
 }
 
 strong {
-	font-family: 'Open Sans';
+	font-family: 'gothic';
     font-size: 13px;
     font-weight: 700;
     line-height: 24px;	
@@ -140,10 +144,10 @@ ul li:before {
 
 ul {
 	color:#5f5f5f;
-	font-family:'Open Sans';
+	font-family:'gothic';
 	font-size:26px;
 	font-weight:100;	
-	line-height:2px;	
+	line-height:14px;	
 	margin:15px 0;
 	list-style:none;
 }
@@ -162,7 +166,7 @@ blockquote {
 
 blockquote p {
 	color:#5f5f5f;
-	font-family:'Open Sans';
+	font-family:'gothic';
 	font-size:14px;
 	font-weight:100;
 	line-height:24px;
@@ -178,7 +182,7 @@ iframe {
 
 .pm-global-title {
 	font-size:24px;
-	font-family:'Cantata One';
+	font-family:'gothic';
 	font-weight:300;
 	color:#FFB100;
 	margin-top:0px;
@@ -190,7 +194,7 @@ iframe {
 
 h1 {
 	font-size:72px;
-	font-family:'Roboto';
+	font-family:'gothic';
 	font-weight:100;
 	color:white;
 }
@@ -198,7 +202,7 @@ h1 {
 /* Body page titles */
 h2 {
 	font-size:24px;
-	font-family:'Cantata One';
+	font-family:'gothic';
 	font-weight:300;
 	color:#FFB100;
 	margin-top:0px;
@@ -209,7 +213,7 @@ h2 {
 
 h3 {
 	font-size:24px;
-	font-family:'Cantata One';
+	font-family:'gothic';
 	font-weight:300;
 	color:#FFB100;
 	margin-top:0px;
@@ -233,7 +237,7 @@ h3 a:hover {
 
 h4 {
 	font-size:20px;
-	font-family:'Cantata One';
+	font-family:'gothic';
 	font-weight:300;
 	color:#FFB100;
 	margin-top:0px;
@@ -243,7 +247,7 @@ h4 {
 
 h5 {
 	font-size:24px;
-	font-family:'Open Sans';
+	font-family:'gothic';
 	font-weight:200;
 	color:#5f5f5f;
 	margin-top:0px;
@@ -253,7 +257,7 @@ h5 {
 /* Small titles */
 h6 {
 	font-size:14px;
-	font-family:'Open Sans';
+	font-family:'gothic';
 	font-weight:100;
 	color:#FFB100;
 	line-height:28px;
@@ -453,7 +457,7 @@ h6 {
 
 .pm-column-container-icon i {
 	font-size:28px;
-	font-family:'FontAwesome';
+	font-family:'gothic';
 	color:#2b5d83;
 }
 
@@ -502,7 +506,7 @@ h6 {
 /* 6. Back to Top button  */
 #back-top:before {
 	content:"\f077";
-	font-family:'FontAwesome';
+	font-family:'FontAwesome';;
 	font-size:22px;
 	color:white;
 	position:absolute;
@@ -538,7 +542,7 @@ h6 {
 /* 7. Tooltip  */
 #pm_marker_tooltip {
 	font-size:12px;
-	font-family:'Open sans';
+	font-family:'gothic';
 	line-height:20px;
 	width:auto;
 	opacity:0;
@@ -613,7 +617,7 @@ h6 {
 .pm-sub-menu-info p {
 	margin:0;
 	padding:0;
-	font-family: 'Cantata One';
+	font-family: 'gothic';
 	font-weight:300;
 	font-size:12px;
 	color:white;
@@ -622,7 +626,7 @@ h6 {
 }
 
 .pm-sub-menu-info p i {
-	font-family:'FontAwesome';
+	font-family:'gothic';
 	font-weight:300;
 	font-size:13px;
 	color:#FFB100;
@@ -637,7 +641,7 @@ h6 {
 	background-color: #FFB100;
     color: white;
     display: block;
-    font-family: 'Cantata One';
+    font-family: 'gothic';
     font-size: 14px;
     font-weight: 500;
     height: 40px;
@@ -656,7 +660,7 @@ h6 {
 }
 
 .pm-sub-menu-book-event a i {
-	font-family:'FontAwesome';
+	font-family:'gothic';
 	margin-left:5px;	
 }
 
@@ -687,7 +691,7 @@ h6 {
 }
 
 .pm-sub-navigation a {
-	font-family: 'Cantata One';
+	font-family: 'gothic';
 	font-weight:300;
 	font-size:12px;
 	color:white;
@@ -703,7 +707,7 @@ h6 {
 }
 
 .pm-sub-navigation a i {
-	font-family:'FontAwesome';
+	font-family:'gothic';
 	font-weight:300;
 	font-size:13px;
 	color:#FFB100;
@@ -819,7 +823,7 @@ header.fixed .pm-header-logo {
 }
 
 .pm-main-nav li a {
-	font-family:'Cantata One';
+	font-family:'gothic';
 	font-weight:700;
 	font-size:12px;
 	color:white;		
@@ -852,7 +856,7 @@ header.fixed .pm-header-logo {
 	font-size:16px;
 	font-weight:100;
 	color:white;
-	font-family:'Cantata One';
+	font-family:'gothic';
 	display:block;
 	overflow:hidden;
 	padding:0px 0 15px 0;
@@ -877,7 +881,7 @@ header.fixed .pm-header-logo {
 	font-size:13px;
 	color:white;
 	line-height:24px;
-	font-family:'Open sans';
+	font-family:'gothic';
 	margin:10px 0 0 0;
 	padding:0px;	
 }
@@ -890,13 +894,13 @@ header.fixed .pm-header-logo {
 
 .pm-footer-social-info-container, .pm-footer-subscribe-container p {
 	font-size:14px;
-	font-family:'Cantata One';
+	font-family:'gothic';
 	font-weight:300;	
 }
 
 .pm-footer-social-info-container h6, .pm-footer-subscribe-container h6 {
 	color: #2c2c2c;
-    font-family: 'Cantata One';
+    font-family: 'gothic';
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 20px;
@@ -911,7 +915,7 @@ header.fixed .pm-header-logo {
 	color:white;	
 	padding:12px;
 	width:360px;
-	font-family:'Open sans';
+	font-family:'gothic';
 	float:left;	
 	margin-right:1px;
 }
@@ -950,7 +954,7 @@ header.fixed .pm-header-logo {
 }
 
 .pm-footer-copyright p {
-    font-family: 'Open Sans';
+    font-family: 'gothic';
     font-size: 11px;
 	font-weight: 300;
 	color:#CCCCCC;
@@ -1128,8 +1132,20 @@ header.fixed .pm-header-logo {
 	-o-transition:all 0.3s;
 }
 
-.sf-menu a:hover {
-	color:#FFB100;	
+#SeraMenu:hover {
+	color:#E72500;	
+}
+#MacawMenu:hover {
+color:white;
+}
+#UniqueMenu:hover {
+	color:#B8A35C;
+}
+#OrangeMenu:hover {
+	color:#F57A00;
+}
+#SignatureMenu:hover {
+	color:#9FB300;
 }
 
 .sf-sub-indicator {
@@ -1143,7 +1159,7 @@ header.fixed .pm-header-logo {
 /* Drop menu level 1 */
 .sf-menu ul {
 	box-shadow:none !important;
-	background-color:rgba(0,0,0,.85);
+	background-color:rgba(22,39,62,.85);
 	padding:0 20px;
 	border-top:3px solid #FFB100;
 }
@@ -1892,7 +1908,9 @@ header.fixed .pm-header-logo {
 	background-repeat:no-repeat;
 	position:relative;
 }
-
+.ApplyJob {
+    background-image:url(imges/slider/csm_BOSS-Hugo-1.jpg);
+}
 .pm-sub-header-title-container {
     display: inline-block;
     margin-top: 160px;
@@ -2126,23 +2144,23 @@ opacity: .8;
 	color:#FFB100;
 }
 
-#sera {
+#sera:hover {
     border-top:3px solid #E72500;
 	color:#E72500;
 }
-#macaw {
+#macaw:hover {
        border-top:3px solid white;
 	color:white;
 }
-#unique {
+#unique:hover {
        border-top:3px solid #B8A35C;
 	color:#B8A35C;
 }
-#orange {
+#orange:hover {
        border-top:3px solid #F57A00;
 	color:#F57A00;
 }
-#Signature{
+#Signature:hover{
        border-top:3px solid #9FB300;
 	color:#9FB300;
 }

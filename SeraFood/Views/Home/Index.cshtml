@@ -15,14 +15,14 @@
                 <img src="~/Content/imges/slider/cateringseramacaw2.jpg" alt="img01" />
 
                 @*<div class="pm-holder">
-                    <div class="pm-caption">
-                        <h1><span>Welcome to Vienna</span></h1>
-                        <span class="pm-caption-decription">
-                            A premium restaurant theme
-                        </span>
-                        <a href="menus.html" class="pm-slide-btn animated">View our menus <i class="fa fa-chevron-right"></i></a>
-                    </div>
-                </div>*@
+                        <div class="pm-caption">
+                            <h1><span>Welcome to Vienna</span></h1>
+                            <span class="pm-caption-decription">
+                                A premium restaurant theme
+                            </span>
+                            <a href="menus.html" class="pm-slide-btn animated">View our menus <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>*@
 
             </li>
 
@@ -30,15 +30,15 @@
                 <img src="~/Content/imges/slider/field-trip1.jpg" alt="img02" />
 
                 @*<div class="pm-holder">
-                    <div class="pm-caption">
-                        <h1><span>Witness the beauty</span></h1>
-                        <span class="pm-caption-decription">
-                            Browse our gallery and see what makes Vienna great!
-                        </span>
-                        <a href="gallery.html" class="pm-slide-btn animated">View our Gallery <i class="fa fa-chevron-right"></i></a>
+                        <div class="pm-caption">
+                            <h1><span>Witness the beauty</span></h1>
+                            <span class="pm-caption-decription">
+                                Browse our gallery and see what makes Vienna great!
+                            </span>
+                            <a href="gallery.html" class="pm-slide-btn animated">View our Gallery <i class="fa fa-chevron-right"></i></a>
 
-                    </div>
-                </div>*@
+                        </div>
+                    </div>*@
 
             </li>
 
@@ -46,15 +46,15 @@
                 <img src="~/Content/imges/slider/DSCN4940.jpg" alt="img02" />
 
                 @*<div class="pm-holder">
-                    <div class="pm-caption">
-                        <h1><span>Book with us!</span></h1>
-                        <span class="pm-caption-decription">
-                            Book your next private party or event with Vienna
-                        </span>
-                        <a href="book-an-event.html" class="pm-slide-btn animated">Book Your Event Now <i class="fa fa-chevron-right"></i></a>
+                        <div class="pm-caption">
+                            <h1><span>Book with us!</span></h1>
+                            <span class="pm-caption-decription">
+                                Book your next private party or event with Vienna
+                            </span>
+                            <a href="book-an-event.html" class="pm-slide-btn animated">Book Your Event Now <i class="fa fa-chevron-right"></i></a>
 
-                    </div>
-                </div>*@
+                        </div>
+                    </div>*@
 
             </li>
 
@@ -66,7 +66,7 @@
 <div class="container pm-containerPadding-top-90">
     <div class="row">
 
-        <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-column-spacing" >
+        <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-column-spacing">
 
             <div class="pm-image-container">
                 <img src="/Content/imges/home/SERA MACAW1.jpg" alt=" image1">
@@ -89,7 +89,7 @@
 
             <p>Our corporate job positions take ownership and responsibility in seramacaw’s, and all that we stand for.</p>
 
-            <a href="@Url.Action("Career")" class="pm-rounded-btn animated pm-primary">Career<i class="fa fa-angle-right"></i></a>
+            <a href="@Url.Action("Home","Jobs")" class="pm-rounded-btn animated pm-primary">Career<i class="fa fa-angle-right"></i></a>
 
         </div>
 
@@ -101,13 +101,13 @@
 
             <h6>We are Listening</h6>
 
-            <p>The story begins with two, Sera Macaw and you.<br/>We are here to serve you</p>
+            <p>The story begins with two, Sera Macaw and you.<br />We are here to serve you</p>
 
             <a href="@Url.Action("Contact")" class="pm-rounded-btn animated pm-primary">Contact US <i class="fa fa-angle-right"></i></a>
 
         </div>
 
-       
+
 
     </div>
 </div>
@@ -122,12 +122,12 @@
 
                 <!-- Featured panel header -->
                 <div class="pm-featured-header-title-container menus">
-                    <p class="pm-featured-header-title">Make Your Own Delights</p>
+                    <p class="pm-featured-header-title"></p>
                     <p class="pm-featured-header-message"></p>
-                    <div class="pm-isotope-filter-container">
+                    <div class="pm-isotope-filter-container" style="margin-top: 45px">
                         <ul class="pm-isotope-filter-system">
                             <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-                            <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 }, new { id = "sera" ,@class="current"})</li>
+                            <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 }, new { id = "sera", @class = "current" })</li>
                             <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { id = "macaw", @class = "current" })</li>
                             <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { id = "unique", @class = "current" })</li>
                             <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { id = "orange", @class = "current" })</li>
@@ -138,15 +138,15 @@
                 <!-- Featured panel header end -->
                 <!-- Filter menu -->
                 @*<div class="pm-isotope-filter-container">
-                    <ul class="pm-isotope-filter-system">
-                        <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-                        <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 },new{id="sera"})</li>
-                        <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { id = "macaw" })</li>
-                        <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { id = "unique" })</li>
-                        <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { id = "orange" })</li>
-                        <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { id = "Signature" })</li>
-                    </ul>
-                </div>*@
+                        <ul class="pm-isotope-filter-system">
+                            <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
+                            <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 },new{id="sera"})</li>
+                            <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { id = "macaw" })</li>
+                            <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { id = "unique" })</li>
+                            <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { id = "orange" })</li>
+                            <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { id = "Signature" })</li>
+                        </ul>
+                    </div>*@
                 <!-- Filter menu end -->
 
             </div>
@@ -205,113 +205,9 @@
     </div>
 </div>
 <!-- Menu filter system end -->
-<!-- Upcoming events filter system 
+<!-- Upcoming events filter system
   <!-- Staff filter system -->
-        <div class="container pm-containerPadding-top-60 pm-containerPadding-bottom-60">
-        	<div class="row">
-            
-                <div class="col-lg-12 pm-containerPadding-bottom-40">
-                	
-                    <div class="pm-featured-header-container">
-                    
-                    	<!-- Featured panel header -->
-                        <div class="pm-featured-header-title-container news">
-                        	<p class="pm-featured-header-title">Meet Us</p>
-                            <p class="pm-featured-header-message"></p>
-                            <div class="pm-isotope-filter-container">
-                                <ul class="pm-isotope-filter-system">
-                                    <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-                                    <li><a href="#" class="current">Top Managment</a></li>
-                                    <li><a href="#" class="current">Supervisory board</a></li>
-                                    <li><a href="#" class="current">Values</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Featured panel header end -->
-                        
-                        <!-- Filter menu -->
-                      
-                        <!-- Filter menu end -->
-                    
-                    </div>
-                    
-                </div><!-- /.col-lg-12 -->
-                
-                <!-- staff item -->
-                <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
-                    <div class="pm-staff-item-container">
-                    	<div class="pm-staff-item-img-container" style="background-image: url(/Content/imges/staff/staff1.jpg)">
-                        	<span></span>
-                        	<div class="pm-staff-item-img-quote">
-                            	<p>Work hard and play hard...its essential for success!</p>
-                            </div>
-                           
-                        </div>
-                        
-                        <div class="pm-staff-item-desc">
-                        	<p class="pm-staff-item-name">Mustafa Hashem</p>
-                            <p class="pm-staff-item-title">Chief Executive Officer (CEO)</p>
-                            
-                          
-                            
-                        </div>
-                    </div>
-                    
-                </div><!-- /.col-lg-4 -->
-                <!-- /staff item -->
-                
-                <!-- staff item -->
-                <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
-                    <div class="pm-staff-item-container">
-                    	<div class="pm-staff-item-img-container" style="background-image: url(/Content/imges/staff/photo1.png); ">
-                        	<span></span>
-                        	<div class="pm-staff-item-img-quote">
-                            	<p>Work hard and play hard...its essential for success!</p>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="pm-staff-item-desc">
-                        	<p class="pm-staff-item-name">Abdelrhman Hashem </p>
-                            <p class="pm-staff-item-title">Vice-CEO</p>
-                            
-                          
-                            
-                        </div>
-                    </div>
-                    
-                </div><!-- /.col-lg-4 -->
-                <!-- /staff item -->
-                
-                <!-- staff item -->
-                <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
-                    <div class="pm-staff-item-container">
-                    	<div class="pm-staff-item-img-container" style="background-image:url(/Content/imges/staff/staff3.jpg);">
-                        	<span></span>
-                        	<div class="pm-staff-item-img-quote">
-                            	<p>Work hard and play hard...its essential for success!</p>
-                            </div>
-                          
-                        </div>
-                        
-                        <div class="pm-staff-item-desc">
-                        	<p class="pm-staff-item-name">Ahmed Hashem</p>
-                            <p class="pm-staff-item-title">Chairman</p>
-                            
-                           
-                            
-                         
-                            
-                        </div>
-                    </div>
-                    
-                </div><!-- /.col-lg-4 -->
-                <!-- /staff item -->
-                
-            </div>
-        </div>
-        <!-- Staff filter system end -->
-    @*<div class="container pm-containerPadding-top-50 pm-containerPadding-bottom-30">
+@*<div class="container pm-containerPadding-top-60 pm-containerPadding-bottom-60">
     <div class="row">
 
         <div class="col-lg-12 pm-containerPadding-bottom-40">
@@ -319,97 +215,196 @@
             <div class="pm-featured-header-container">
 
                 <!-- Featured panel header -->
-                <div class="pm-featured-header-title-container events">
-                    <p class="pm-featured-header-title">Upcoming Events</p>
-                    <p class="pm-featured-header-message">Come and join us at our upcoming events across the city</p>
+                <div class="pm-featured-header-title-container news">
+                    <p class="pm-featured-header-title">Meet Us</p>
+                    <p class="pm-featured-header-message"></p>
+                    <div class="pm-isotope-filter-container">
+                        <ul class="pm-isotope-filter-system">
+                            <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
+                            <li><a href="#" class="current">Top Managment</a></li>
+                            <li><a href="#" class="current">Supervisory board</a></li>
+                            <li><a href="#" class="current">Values</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- Featured panel header end -->
                 <!-- Filter menu -->
-                <div class="pm-isotope-filter-container">
-                    <ul class="pm-isotope-filter-system">
-                        <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-                        <li><a href="#" class="current">Past Events</a></li>
-                        <li><a href="events.html">Browse Events</a></li>
-                        <!--<li><a href="#">Social Events</a></li>-->
-                    </ul>
-                </div>
                 <!-- Filter menu end -->
 
             </div>
 
         </div><!-- /.col-lg-12 -->
-        <!-- Event item -->
+        <!-- staff item -->
         <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
-            <div class="pm-event-item-container">
-                <div class="pm-event-item-img-container" style="background-image: url(/Content/imges/events/item1.jpg); ">
-                    <div class="pm-event-item-date">
-                        <p class="pm-event-item-month">JUL</p>
-                        <p class="pm-event-item-day">28</p>
+            <div class="pm-staff-item-container">
+                <div class="pm-staff-item-img-container" style="background-image: url(/Content/imges/staff/staff1.jpg)">
+                    <span></span>
+                    <div class="pm-staff-item-img-quote">
+                        <p>Work hard and play hard...its essential for success!</p>
                     </div>
+
                 </div>
 
-                <div class="pm-event-item-desc">
-                    <p class="pm-event-item-title">Live jazz band</p>
-                    <div class="pm-event-item-divider"></div>
-                    <p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
-                    <div class="pm-event-item-divider"></div>
-                    <ul class="pm-event-item-btns">
-                        <li><a href="single-event-post.html" class="pm-rounded-btn small pm-primary">more info</a></li>
-                        <li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
-                    </ul>
+                <div class="pm-staff-item-desc">
+                    <p class="pm-staff-item-name">Mustafa Hashem</p>
+                    <p class="pm-staff-item-title">Chief Executive Officer (CEO)</p>
+
+
+
                 </div>
             </div>
+
         </div><!-- /.col-lg-4 -->
-        <!-- /Event item -->
-        <!-- Event item -->
+        <!-- /staff item -->
+        <!-- staff item -->
         <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
-            <div class="pm-event-item-container">
-                <div class="pm-event-item-img-container" style="background-image: url(/Content/imges/events/item2.jpg);">
-                    <div class="pm-event-item-date">
-                        <p class="pm-event-item-month">AUG</p>
-                        <p class="pm-event-item-day">13</p>
+            <div class="pm-staff-item-container">
+                <div class="pm-staff-item-img-container" style="background-image: url(/Content/imges/staff/photo1.png); ">
+                    <span></span>
+                    <div class="pm-staff-item-img-quote">
+                        <p>Work hard and play hard...its essential for success!</p>
                     </div>
+
                 </div>
 
-                <div class="pm-event-item-desc">
-                    <p class="pm-event-item-title">wine tasting</p>
-                    <div class="pm-event-item-divider"></div>
-                    <p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
-                    <div class="pm-event-item-divider"></div>
-                    <ul class="pm-event-item-btns">
-                        <li><a href="single-event-post-with-sidebar.html" class="pm-rounded-btn small pm-primary">more info</a></li>
-                        <li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
-                    </ul>
+                <div class="pm-staff-item-desc">
+                    <p class="pm-staff-item-name">Abdelrhman Hashem </p>
+                    <p class="pm-staff-item-title">Vice-CEO</p>
+
+
+
                 </div>
             </div>
+
         </div><!-- /.col-lg-4 -->
-        <!-- /Event item -->
-        <!-- Event item -->
+        <!-- /staff item -->
+        <!-- staff item -->
         <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
-            <div class="pm-event-item-container">
-                <div class="pm-event-item-img-container" style="background-image: url(/Content/imges/events/item3.jpg);">
-                    <div class="pm-event-item-date">
-                        <p class="pm-event-item-month">SEP</p>
-                        <p class="pm-event-item-day">15</p>
+            <div class="pm-staff-item-container">
+                <div class="pm-staff-item-img-container" style="background-image:url(/Content/imges/staff/staff3.jpg);">
+                    <span></span>
+                    <div class="pm-staff-item-img-quote">
+                        <p>Work hard and play hard...its essential for success!</p>
                     </div>
+
                 </div>
 
-                <div class="pm-event-item-desc">
-                    <p class="pm-event-item-title">heart &amp; stroke fundraiser</p>
-                    <div class="pm-event-item-divider"></div>
-                    <p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
-                    <div class="pm-event-item-divider"></div>
-                    <ul class="pm-event-item-btns">
-                        <li><a href="single-event-post.html" class="pm-rounded-btn small pm-primary">more info</a></li>
-                        <li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
-                    </ul>
+                <div class="pm-staff-item-desc">
+                    <p class="pm-staff-item-name">Ahmed Hashem</p>
+                    <p class="pm-staff-item-title">Chairman</p>
+
+
+
+
+
                 </div>
             </div>
+
         </div><!-- /.col-lg-4 -->
-        <!-- /Event item -->
+        <!-- /staff item -->
 
     </div>
 </div>*@
+<!-- Staff filter system end -->
+@*<div class="container pm-containerPadding-top-50 pm-containerPadding-bottom-30">
+        <div class="row">
+
+            <div class="col-lg-12 pm-containerPadding-bottom-40">
+
+                <div class="pm-featured-header-container">
+
+                    <!-- Featured panel header -->
+                    <div class="pm-featured-header-title-container events">
+                        <p class="pm-featured-header-title">Upcoming Events</p>
+                        <p class="pm-featured-header-message">Come and join us at our upcoming events across the city</p>
+                    </div>
+                    <!-- Featured panel header end -->
+                    <!-- Filter menu -->
+                    <div class="pm-isotope-filter-container">
+                        <ul class="pm-isotope-filter-system">
+                            <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
+                            <li><a href="#" class="current">Past Events</a></li>
+                            <li><a href="events.html">Browse Events</a></li>
+                            <!--<li><a href="#">Social Events</a></li>-->
+                        </ul>
+                    </div>
+                    <!-- Filter menu end -->
+
+                </div>
+
+            </div><!-- /.col-lg-12 -->
+            <!-- Event item -->
+            <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
+                <div class="pm-event-item-container">
+                    <div class="pm-event-item-img-container" style="background-image: url(/Content/imges/events/item1.jpg); ">
+                        <div class="pm-event-item-date">
+                            <p class="pm-event-item-month">JUL</p>
+                            <p class="pm-event-item-day">28</p>
+                        </div>
+                    </div>
+
+                    <div class="pm-event-item-desc">
+                        <p class="pm-event-item-title">Live jazz band</p>
+                        <div class="pm-event-item-divider"></div>
+                        <p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
+                        <div class="pm-event-item-divider"></div>
+                        <ul class="pm-event-item-btns">
+                            <li><a href="single-event-post.html" class="pm-rounded-btn small pm-primary">more info</a></li>
+                            <li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-4 -->
+            <!-- /Event item -->
+            <!-- Event item -->
+            <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
+                <div class="pm-event-item-container">
+                    <div class="pm-event-item-img-container" style="background-image: url(/Content/imges/events/item2.jpg);">
+                        <div class="pm-event-item-date">
+                            <p class="pm-event-item-month">AUG</p>
+                            <p class="pm-event-item-day">13</p>
+                        </div>
+                    </div>
+
+                    <div class="pm-event-item-desc">
+                        <p class="pm-event-item-title">wine tasting</p>
+                        <div class="pm-event-item-divider"></div>
+                        <p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
+                        <div class="pm-event-item-divider"></div>
+                        <ul class="pm-event-item-btns">
+                            <li><a href="single-event-post-with-sidebar.html" class="pm-rounded-btn small pm-primary">more info</a></li>
+                            <li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-4 -->
+            <!-- /Event item -->
+            <!-- Event item -->
+            <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
+                <div class="pm-event-item-container">
+                    <div class="pm-event-item-img-container" style="background-image: url(/Content/imges/events/item3.jpg);">
+                        <div class="pm-event-item-date">
+                            <p class="pm-event-item-month">SEP</p>
+                            <p class="pm-event-item-day">15</p>
+                        </div>
+                    </div>
+
+                    <div class="pm-event-item-desc">
+                        <p class="pm-event-item-title">heart &amp; stroke fundraiser</p>
+                        <div class="pm-event-item-divider"></div>
+                        <p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
+                        <div class="pm-event-item-divider"></div>
+                        <ul class="pm-event-item-btns">
+                            <li><a href="single-event-post.html" class="pm-rounded-btn small pm-primary">more info</a></li>
+                            <li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-4 -->
+            <!-- /Event item -->
+
+        </div>
+    </div>*@
 <!-- Upcoming events filter system end -->
 <!-- News filter system -->
 <div class="container pm-containerPadding-top-30 pm-containerPadding-bottom-90">
@@ -422,8 +417,17 @@
                 <!-- Featured panel header -->
                 <div class="pm-featured-header-title-container news">
                     <p class="pm-featured-header-title">Be a part of sera macaw</p>
-                 
+                    <p class="pm-featured-header-message"></p>
+                    <div class="pm-isotope-filter-container">
+                        <ul class="pm-isotope-filter-system">
+                            <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
+                            <li><a href="#" class="current">Get a Franchise</a></li>
+                            <li><a href="#" class="current">Get a Career</a></li>
+
+                        </ul>
+                    </div>
                 </div>
+
                 <!-- Featured panel header end -->
 
             </div>
@@ -434,34 +438,38 @@
 
             <div class="pm-news-post-container">
 
-                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/career_250x251.jpg'); ">
+                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/best-career-apps.jpg'); ">
                     <div class="pm-news-post-title">
                         <p>Start your business now and build your own sera macaw store</p>
                     </div>
                 </div>
 
-                <div class="pm-news-post-meta-container">
+                <div class="pm-news-post-meta-container" style="margin-top: 75px;">
                     <div class="pm-news-post-date">
-                        <p class="day">Get a</p>
-                        <p class="day" style="font-size: 29px;">frenchise</p>
+                        <img src="/Content/imges/home/SERA MACAWfran1.png" style="height: 184px;
+margin-left: -2px;
+width: 145px;" />
 
-</div>
+                    </div>
                     @*<ul class="pm-meta-options-list">
-                        <li><i class="fa fa-comment"></i> &nbsp;0 Comments</li>
-                        <li><i class="fa fa-heart"></i> &nbsp;<a href="#">Like this</a></li>
-                        <li><i class="fa fa-twitter"></i> &nbsp;<a href="#">Tweet this</a></li>
-                        <li><i class="fa fa-pencil"></i> &nbsp;<a href="#">Post a comment</a></li>
-                    </ul>*@
+                            <li><i class="fa fa-comment"></i> &nbsp;0 Comments</li>
+                            <li><i class="fa fa-heart"></i> &nbsp;<a href="#">Like this</a></li>
+                            <li><i class="fa fa-twitter"></i> &nbsp;<a href="#">Tweet this</a></li>
+                            <li><i class="fa fa-pencil"></i> &nbsp;<a href="#">Post a comment</a></li>
+                        </ul>*@
                 </div>
 
                 <div class="pm-news-post-desc-container">
 
-                    <p class="pm-news-post-excerpt">It's the lines of people hungry for a fresh, hot, golden brown soft pretzel from sera macaw chain.
+                    <p class="pm-news-post-excerpt">
+                    <div style="color: #FFB100; font-size: xx-large; display: inline; ">“</div>What a franchise owner can expect from opening an Sera Macaw’s outlet is a chance to run their own business with the support, guidance, and training that comes with a global brand. While many business start-ups face the challenges of raising finance, in this case the bank is ready to support the right candidates, as the support network is so strong.<div style="color: #FFB100; font-size: xx-large; display: inline; ">”</div>
 
-It's the collaborative spirit of a company that sees the value brought by every one of its franchisees and employees, a spirit demonstrated by the respectful  
+                      <br/>  Abdelrhman Hashem<br/>
+                        chairman
 
-<a href="#">{...}</a></p>
-                    <p class="pm-news-post-continue"><a href="single-post.html">Continue Reading &rarr;</a></p>
+                        <a href="#">{...}</a>
+                    </p>
+                    <p class="pm-news-post-continue"><a href="">Continue Reading &rarr;</a></p>
 
                 </div>
 
@@ -473,30 +481,37 @@ It's the collaborative spirit of a company that sees the value brought by every 
         <div class="col-lg-6 col-md-6 col-sm-12 pm-column-spacing">
 
             <div class="pm-news-post-container">
-
-                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/best-career-apps.jpg');">
+                
+                <div class="pm-news-post-image" style="background-image: url('/Content/imges/posts/career_250x251.jpg');">
                     <div class="pm-news-post-title">
-                        <p>Donec lorem velit, convallis nec ullamcorper at commodo </p>
+                        <p>YOU
+Face the challenge: join us on the road to success</p>
                     </div>
                 </div>
 
-                <div class="pm-news-post-meta-container">
+                <div class="pm-news-post-meta-container" style="margin-top: 75px;">
                     <div class="pm-news-post-date">
-                        <p class="day">09</p>
-                        <p class="month-year">Jul<br />2014</p>
+                        <a href="@Url.Action("Home","Jobs")">  <img src="/Content/imges/home/SERA MACAWGetJob.png" style="height: 184px; margin-left: -2px; width: 145px;"></a>
+
                     </div>
-                    <ul class="pm-meta-options-list">
-                        <li><i class="fa fa-comment"></i> &nbsp;0 Comments</li>
-                        <li><i class="fa fa-heart"></i> &nbsp;<a href="#">Like this</a></li>
-                        <li><i class="fa fa-twitter"></i> &nbsp;<a href="#">Tweet this</a></li>
-                        <li><i class="fa fa-pencil"></i> &nbsp;<a href="#">Post a comment</a></li>
-                    </ul>
+                    @*<ul class="pm-meta-options-list">
+                <li><i class="fa fa-comment"></i> &nbsp;0 Comments</li>
+                <li><i class="fa fa-heart"></i> &nbsp;<a href="#">Like this</a></li>
+                <li><i class="fa fa-twitter"></i> &nbsp;<a href="#">Tweet this</a></li>
+                <li><i class="fa fa-pencil"></i> &nbsp;<a href="#">Post a comment</a></li>
+            </ul>*@
                 </div>
 
                 <div class="pm-news-post-desc-container">
 
-                    <p class="pm-news-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet purus consectetur, rhoncus urna eget, semper sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet purus consectetur, rhoncus urna eget, semper sapien <a href="#">{...}</a></p>
-                    <p class="pm-news-post-continue"><a href="single-post-with-sidebar.html">Continue Reading &rarr;</a></p>
+                    <p class="pm-news-post-excerpt"><p >  WELCOME TO VARIETY </p> 
+
+If you feel passionate about food and beverage, you should see for yourself what SERA MACAW is all about: it is a relax group that is both consistent and adaptable at the same time. It´s also one of the best companies in the Egypt.
+
+In our day-to-day work "we inspire people" but always remain genuine. As an employer, we can offer you a wide range of opportunities - not only fascinating professional tasks, but also in terms of many "feel-good aspects".
+
+Have a look around and discover the many different ways of joining us.  <a href="@Url.Action("Home","Jobs")">{...}</a></p>
+                    <p class="pm-news-post-continue"><a href="@Url.Action("Home","Jobs")">Continue Reading &rarr;</a></p>
 
                 </div>
 

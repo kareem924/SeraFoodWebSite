@@ -18,6 +18,9 @@ namespace SeraFood.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<Job> Jobs { get; set; }
+        public DbSet<ApplyJob> ApplyJobs { get; set; }
+      
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 

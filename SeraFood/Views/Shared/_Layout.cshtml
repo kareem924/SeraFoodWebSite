@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description" content="">
     <meta name="author" content="">
-    @*<link rel="shortcut icon" href="favicon.png">*@
+    <link rel="shortcut icon" href="../../favicon.ico">
     <link href="~/Content/bootstrap.css" rel="stylesheet">
 
     <!-- main css -->
@@ -46,14 +46,14 @@
     <!-- Flickr feed -->
     <!-- Pulse Slider -->
     <link rel="stylesheet" type="text/css" href="~/Scripts/pulse/pm-slider.css" />
-    <!-- Pulse Slider 
+    <!-- Pulse Slider
       <!-- Woocommerce -->
     <link rel="stylesheet" type="text/css" href="~/Content/woocommerce-custom.css" />
     <!-- Woocommerce -->
-        <!-- Development Google Fonts -->
+    <!-- Development Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Cantata+One%7COpen+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- Development Google Fonts -->
-    <title>VIENNA :: Premium Restaurant Template</title>
+    <title>Seramacaw</title>
 </head>
 <body>
 
@@ -76,24 +76,24 @@
 
             <li>@Html.ActionLink("Home", "Index", "Home")</li>
             <li>
-                <a href="#">Menus</a>
+                <a href="#">Brands</a>
                 <ul>
-                    <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 })</li>
-                    <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 })</li>
-                    <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 })</li>
-                    <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 })</li>
-                    <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 })</li>
+                    <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 },null)</li>
+                    <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, null)</li>
+                    <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, null)</li>
+                    <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, null)</li>
+                    <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, null)</li>
                 </ul>
             </li>
             <li><a href="gallery.html">Gallery</a></li>
-          
+
             @*<li>
-                <a href="#">News</a>
-                <ul>
-                    <li><a href="news.html">News Full Width</a></li>
-                    <li><a href="news-with-sidebar.html">News with Sidebar</a></li>
-                </ul>
-            </li>*@
+                    <a href="#">News</a>
+                    <ul>
+                        <li><a href="news.html">News Full Width</a></li>
+                        <li><a href="news-with-sidebar.html">News with Sidebar</a></li>
+                    </ul>
+                </li>*@
             <li>
                 <a href="#">Locations</a>
                 <ul>
@@ -103,13 +103,14 @@
                 </ul>
             </li>
             <li><a href="catering.html">Franchising</a></li>
+            <li><a href="catering.html">How we make it</a></li>
 
         </ul>
 
     </div><!-- /pm-mobile-nav-overlay -->
     <!-- Theme color selector -->
     <!-- Theme color selector -->
- 
+
 
     <div id="pm_layout_wrapper" class="pm-full-mode">
         <!-- Use wrapper for wide or boxed mode -->
@@ -155,8 +156,8 @@
 
                     <div class="col-lg-5 col-md-5 col-sm-6" style="margin-left: 165px;">
                         <ul class="pm-sub-navigation">
-                           
-                                @*<div class="pm-dropdown pm-language-selector-menu">
+
+                            @*<div class="pm-dropdown pm-language-selector-menu">
                                     <div class="pm-dropmenu">
                                         <p class="pm-menu-title">Language</p>
                                         <i class="fa fa-angle-down"></i>
@@ -168,13 +169,13 @@
                                         </ul>
                                     </div>
                                 </div>*@
-                         
-                           
-                            <li>@Html.ActionLink("About Us", "About", "Home", new { style = "margin-right: 11px;" })</li> 
+
+
+                            <li>@Html.ActionLink("About Us", "About", "Home", null,new { style = "margin-right: 11px;" })</li>
                             <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
-                            <li>@Html.ActionLink("Career", "About", "Home",new{style="margin-left: -5px;"})</li>
+                            <li>@Html.ActionLink("Career","Home","Jobs", null,new { style = "margin-left: -5px;" })</li>
                             @*<li class="pm-search-btn-li"><a href="#" class="pm-search-btn" id="pm-search-btn"><i class="fa fa-search"></i></a></li>
-                <li class="pm-cart-btn-li"><a href="cart.html" class="pm-cart-btn"><i class="fa fa-shopping-cart"></i></a></li>*@
+                                <li class="pm-cart-btn-li"><a href="cart.html" class="pm-cart-btn"><i class="fa fa-shopping-cart"></i></a></li>*@
                         </ul>
                     </div>
 
@@ -211,19 +212,19 @@
 
                             <ul class="sf-menu pm-nav">
 
-                                <li>@Html.ActionLink("Home","Index","Home")</li>
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
                                 <li>
-                                    <a href="#">Menus</a>
+                                    <a href="#">Brands</a>
                                     <ul>
-                                        <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 },new{})</li>
-                                        <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { })</li>
-                                        <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { })</li>
-                                        <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { })</li>
-                                        <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { })</li>
+                                        <li>@Html.ActionLink("Sera", "Category", "Categories", new { id = 1 }, new {id="SeraMenu" })</li>
+                                        <li>@Html.ActionLink("Macaw", "Category", "Categories", new { id = 2 }, new { id = "MacawMenu" })</li>
+                                        <li>@Html.ActionLink("Unique", "Category", "Categories", new { id = 3 }, new { id = "UniqueMenu" })</li>
+                                        <li>@Html.ActionLink("Orange", "Category", "Categories", new { id = 4 }, new { id = "OrangeMenu" })</li>
+                                        <li>@Html.ActionLink("Signature", "Category", "Categories", new { id = 5 }, new { id = "SignatureMenu" })</li>
                                     </ul>
                                 </li>
                                 <li><a href="gallery.html">Gallery</a></li>
-                               
+
                                 <li>
                                     <a href="#">Locations</a>
                                     <ul>
@@ -232,6 +233,8 @@
                                     </ul>
                                 </li>
                                 <li><a href="catering.html">Franchising</a></li>
+                                <li><a href="catering.html">How we make it</a></li>
+
 
                             </ul>
 
@@ -246,13 +249,10 @@
         </header>
         <!-- /Main navigation -->
         <!-- SLIDER AREA -->
-
-      
-
         <!-- SLIDER AREA end -->
         <!-- BODY CONTENT starts here -->
         <!-- Overview boxes -->
-       @RenderBody()
+        @RenderBody()
 
         <div class="pm-fat-footer">
 
@@ -263,170 +263,38 @@
                         <p style="margin-top: 29px;">
                             “ Sera macaw`s shops is aiming to be a friendly place that you can eat drink what makes you feel relax and freshly. It is in the fast casual category with an emphasis upon the freshness of our products and our product that will be baked daily inside the lounge. Our lounges will locate in high-traffic venues such as lifestyle centers, shopping strip malls, airports, universities, and travel places”
 
-                           
+
                         </p>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 pm-widget-footer">
-                        <h6>Recent Posts</h6>
+                        <ul class="pm-footer-social-icons">
+                            <h6> <li title="Instagram" class="pm_tip_static_top"><a href="#"><i class="fa fa-instagram fb"></i></a></li> </h6>
+                        </ul>
                         <ul class="pm-recent-blog-posts">
                             <!-- Post -->
-                            <li>
-                                <div class="pm-recent-blog-post-thumb" style="background-image: url(/Content/imges/posts/p1.jpg);"></div>
-                                <div class="pm-recent-blog-post-details">
-                                    <a href="blog-single-post.html">Picking the best spices and ingredients for your next dish</a>
-                                    <p class="pm-comment-count"><i class="fa fa-comment"></i> 8 Comments</p>
-                                </div>
-                            </li>
-                            <!-- Post end -->
-                            <!-- Post -->
-                            <li>
-                                <div class="pm-recent-blog-post-thumb" style="background-image: url(/Content/imges/posts/p2.jpg);"></div>
-                                <div class="pm-recent-blog-post-details">
-                                    <a href="blog-single-post.html">The secrets to creating the perfect Italian dish</a>
-                                    <p class="pm-comment-count"><i class="fa fa-comment"></i> 12 Comments</p>
-                                </div>
-                            </li>
-                            <!-- Post end -->
-                            <!-- Post -->
-                            <li>
-                                <div class="pm-recent-blog-post-thumb" style="background-image: url(/Content/imges/posts/p3.jpg);"></div>
-                                <div class="pm-recent-blog-post-details">
-                                    <a href="blog-single-post.html">The life and culture of Venice, Italy</a>
-                                    <p class="pm-comment-count"><i class="fa fa-comment"></i> 4 Comments</p>
-                                </div>
-                            </li>
+                            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="3" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"><div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/u5GOdkRBZI/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_top">seramacaw#lounge#pretzels#love</a></p><p style="font-family:Arial,sans-serif;color:#c9c8cd; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Sera Macaw (@@seralounge)&nbsp;on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-11-02T09:22:16+00:00">Nov 11, 2014 at 1:22am PST</time></p></div></blockquote>
                             <!-- Post end -->
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 pm-widget-footer">
-                        <h6>Flickr Gallery</h6>
 
+                        <ul class="pm-footer-social-icons">
+                            <h6>  <li title="Twitter" class="pm_tip_static_top"><a href="#"><i class="fa fa-twitter tw"></i></a></li>  </h6>
+                        </ul>
                         <div class="flickr_badge_wrapper clearfix">
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/1.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/2.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/3.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/4.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/5.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/6.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/7.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/8.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/9.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/10.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/11.jpg">
-                                </a>
-                            </div>
-
-                            <div class="flickr_badge_image">
-                                <a href="#">
-                                    <span></span>
-                                    <i class="fa fa-search-plus"></i>
-                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="~/Content/imges/flickr/12.jpg">
-                                </a>
-                            </div>
-
+                            <a class="twitter-timeline" href="https://twitter.com/seralounge" data-widget-id="528850063162753024">Tweets by @@seralounge</a>
 
                         </div>
 
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 pm-widget-footer">
-                        <h6>Next Event</h6>
+
+                        <ul class="pm-footer-social-icons">
+                            <h6> <li title="Facebook" class="pm_tip_static_top"><a href="#"><i class="fa fa-facebook fb"></i></a></li> </h6>
+                        </ul>
 
                         <div class="pm-event-widget-container">
-
-                            <div class="pm-event-widget-img" style="background-image: url(~/Content/imges/events/1.jpg);">
-                                <div class="pm-event-widget-date-container">
-                                    <p class="pm-event-widget-month">JUL</p>
-                                    <p class="pm-event-widget-day">28</p>
-                                </div>
-                            </div>
-
-                            <div class="pm-event-widget-desc">
-
-                                <p class="pm-event-widget-desc-title">Live music performance</p>
-
-                                <p class="pm-event-widget-desc-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget…<a href="#">{...}</a> </p>
-
-                            </div>
-
-                            <ul class="pm-event-widget-btns">
-                                <li><a href="#" class="pm-rounded-btn small pm-primary">More Info</a></li>
-                                <li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;Fan page</a></li>
-                            </ul>
+                            <div class="fb-like-box" data-href="https://www.facebook.com/seralounge" data-width="263" data-height="350" data-colorscheme="dark" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 
                         </div>
 
@@ -444,7 +312,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="pm-footer-social-info-container">
                             <h6>Follow us </h6>
-                            <ul class="pm-footer-social-icons">
+                            <ul class="pm-footer-social-icons" style="margin-top: -18px;">
                                 <li title="Twitter" class="pm_tip_static_top"><a href="#"><i class="fa fa-twitter tw"></i></a></li>
                                 <li title="Facebook" class="pm_tip_static_top"><a href="#"><i class="fa fa-facebook fb"></i></a></li>
                                 <li title="Google Plus" class="pm_tip_static_top"><a href="#"><i class="fa fa-google-plus gp"></i></a></li>
@@ -459,7 +327,7 @@
                         <div style="margin-left:149px" class="pm-footer-subscribe-container">
                             <h6 style="margin-left: 232px">Keep in touch !</h6>
 
-                            <div class="pm-footer-subscribe-form-container">
+                            <div class="pm-footer-subscribe-form-container" style="margin-top: -18px;">
                                 <form action="#" method="post" id="pm-footer-subscribe">
                                     <input class="pm-footer-subscribe-field" type="text" placeholder="cell phone" value="" />
                                     <div class="pm-footer-subscribe-submit-btn">
@@ -485,17 +353,17 @@
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-12 pm-footer-navigation-col">
                         <ul class="pm-footer-navigation" id="pm-footer-nav">
-                           
+
                             <li><a href="menus.html">Terms Of Use</a></li>
                             <li><a href="gallery.html">Privacy Policy</a></li>
-             
+
                         </ul>
                     </div>
                 </div>
             </div>
 
         </div>
-     
+
     </div><!-- /pm_layout-wrapper -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="~/Scripts/jquery-2.1.1.min.js"></script>
@@ -515,7 +383,24 @@
     <script src="~/Scripts/theme-color-selector/theme-color-selector.js"></script>
     <script src="~/Scripts/wow/wow.min.js"></script>
     <script src="~/Scripts/pulse/jquery.PMSlider.js"></script>
-
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+    <script type="text/javascript">
+        window.twttr = (function (d, s, id) {
+            var t, js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));
+    </script>
 
     <p id="back-top" class="visible-lg visible-md visible-sm"> </p>
 </body>

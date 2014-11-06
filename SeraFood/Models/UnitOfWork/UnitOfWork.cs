@@ -15,6 +15,30 @@ namespace SeraFood.Models.UnitOfWork
         {
             _context = new SeraFoodCtx();
         }
+        private IGenericRepository<ApplyJob> _ApplyJobs;
+        public Repositories.IGenericRepository<ApplyJob> ApplyJobs
+        {
+            get
+            {
+                if (_ApplyJobs == null)
+                {
+                    return new EfGenericRepository<ApplyJob>(_context);
+                }
+                return _ApplyJobs;
+            }
+        }
+        private IGenericRepository<Job> _Jobs;
+        public Repositories.IGenericRepository<Job> Jobs
+        {
+            get
+            {
+                if (_Jobs == null)
+                {
+                    return new EfGenericRepository<Job>(_context);
+                }
+                return _Jobs;
+            }
+        }
         private IGenericRepository<Product> _Producs;
         public Repositories.IGenericRepository<Product> Products
         {

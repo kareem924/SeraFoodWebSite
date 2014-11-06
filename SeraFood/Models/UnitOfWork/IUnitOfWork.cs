@@ -15,6 +15,8 @@ namespace SeraFood.Models.UnitOfWork
         IGenericRepository<Category> Categories { get; }
 
         IGenericRepository<Review> Reviews { get; }
+        IGenericRepository<Job>  Jobs { get; }
+        IGenericRepository<ApplyJob> ApplyJobs { get; }
 
         void Save(); //Commit
     }

@@ -167,7 +167,7 @@ namespace SeraFood.Controllers
             var model = _uow.Products.List(p => p.CategoryId == id);
            return View(model);
         }
-
+         [AllowAnonymous]
         public ActionResult ProductItem(int id)
         {
             var Item = _uow.Products.Find(id);
