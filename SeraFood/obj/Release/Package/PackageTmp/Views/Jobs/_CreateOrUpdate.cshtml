@@ -1,0 +1,34 @@
+﻿@model SeraFood.Models.Job
+
+@Html.HiddenFor(p => p.JobId)
+
+<div class="form-group">
+    <label>Job Name</label>
+    @Html.TextBoxFor(p => p.JobeName, new { @class = "form-control", placeholder = "Enter ProductName" })
+</div>
+<div class="form-group">
+    <label>Job Description</label>
+    @Html.TextAreaFor(p => p.JobDescription, new { @class = "form-control", placeholder = "Enter ProductName" })
+</div>
+<div class="form-group">
+    <label>Job Responsibilities</label>
+    @Html.TextAreaFor(p => p.JobResponsibilities, new { @class = "form-control", placeholder = "Enter ProductName" })
+</div>
+<div class="form-group">
+    <label>Job Qualifications</label>
+    @Html.TextAreaFor(p => p.JobQualifications, new { @class = "form-control", placeholder = "Enter ProductName" })
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" name="Available"> Available
+    </label>
+</div>
+
+
+
+<button type="submit" class="btn btn-success" style="margin-left:50px;width: 850px; ">Submit</button>
+@Html.ActionLink("Back to index", "Index", "Categories", new { @class = "btn btn-danger", style = "width:210px" })
+<br />
+<br />
+<br />
+<br />

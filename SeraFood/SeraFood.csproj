@@ -447,6 +447,7 @@
     <Content Include="fonts\gothic.eot" />
     <Content Include="fonts\gothic.ttf" />
     <Content Include="fonts\gothic.woff" />
+    <None Include="Properties\PublishProfiles\kareem.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ajax-cateringform\ajax-catering-form.js" />
     <Content Include="Scripts\ajax-cateringform\_notes\dwsync.xml" />

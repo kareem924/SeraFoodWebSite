@@ -1,0 +1,73 @@
+﻿@model IEnumerable<SeraFood.Models.Category>
+
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+  <!-- SUB-HEADER area -->
+<div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+
+    <div class="pm-sub-header-title-container">
+        <p class="pm-sub-header-title"><span>Menus</span></p>
+        <p class="pm-sub-header-message">Discover our amazing entree of delicious cusine</p>
+    </div>
+
+</div>
+
+<!-- SUB-HEADER area end -->
+<!-- BODY CONTENT starts here -->
+<!-- Menu filter system -->
+<div class="container pm-containerPadding80">
+    <div class="row">
+
+        <div class="col-lg-12 pm-containerPadding-bottom-40">
+
+            <div class="pm-featured-header-container">
+
+                <!-- Featured panel header -->
+                <div class="pm-featured-header-title-container menus">
+                    <p class="pm-featured-header-title">Award Winning Menu</p>
+                    <p class="pm-featured-header-message">Our menu has won numerous awards for best authentic cuisine</p>
+                </div>
+                <!-- Featured panel header end -->
+                <!-- Filter menu -->
+             <!--   <div class="pm-isotope-filter-container">
+                    <ul class="pm-isotope-filter-system">
+                        <li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#" class="current">Dinner</a></li>
+                    </ul>
+                </div>-->
+         
+
+            </div>
+        
+        for
+        </div><!-- /.col-lg-12 -->
+        <!-- menu item -->
+        @foreach (var cat in Model)
+        {
+            <div class="col-lg-4 col-md-4 col-sm-6 pm-column-spacing">
+                <div class="pm-menu-item-container">
+                   
+                        <div class="pm-menu-item-img-container" style="background-image: url(@Url.Action("Download", "Categories", new { id = cat.CategoryId }));">
+                   
+                    @*<div class="pm-menu-item-price"><p>$14.99</p></div>*@
+                </div>
+
+                        <div class="pm-menu-item-desc">
+                            <a href="@Url.Action("Products", "Product", routeValues: new { id = cat.CategoryId })"><p class="pm-menu-item-title">@cat.CategoryName</p></a>
+                            <p class="pm-menu-item-excerpt">@cat.CategoryDescription </p>
+                        </div>
+</div>
+
+            </div>
+        }
+        <!-- /.col-lg-4 -->
+        <!-- /menu item -->
+      
+
+    </div>
+</div>

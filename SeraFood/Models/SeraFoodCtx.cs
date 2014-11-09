@@ -12,7 +12,7 @@ namespace SeraFood.Models
     }
     public class SeraFoodCtx : IdentityDbContext<ApplicationUser>
     {
-        public SeraFoodCtx() : base("Data Source=.;Trusted_Connection=yes;  Initial Catalog=SeraFood;") { }
+        public SeraFoodCtx() : base("DefaultConnection") { }
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }

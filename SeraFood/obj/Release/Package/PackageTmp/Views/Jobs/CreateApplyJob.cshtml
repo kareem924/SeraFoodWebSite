@@ -1,0 +1,64 @@
+﻿@using System.Web.UI.WebControls
+@using SeraFood.Models
+@model SeraFood.Models.ApplyJob
+
+@{
+    ViewBag.Title = "Apply Job";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var jobDetails = (Job)ViewBag.JobsDetails;
+}
+
+<div class="pm-sub-header-container ApplyJob" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+
+   
+</div>
+
+<!-- SUB-HEADER area end -->
+<!-- BODY CONTENT starts here -->
+
+
+
+<div class="container pm-containerPadding-bottom-60">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 pm-column-spacing">
+
+           <h6>Job Description</h6>
+           @jobDetails.JobDescription
+
+            <div class="pm-divider" style="margin:20px 0;"></div>
+
+            <h6>Job Qualifications</h6>
+            <p>@jobDetails.JobQualifications</p>
+
+            <div class="pm-divider" style="margin:20px 0;"></div>
+
+            <h6>Job Responsibilities</h6>
+            <p>@jobDetails.JobResponsibilities</p>
+
+
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 pm-column-spacing">
+            <div class="panel panel-@ViewBag.Status">
+                <div class="panel-heading">
+                    @ViewBag.Message
+                </div>
+            </div>
+            <h6 class="pm-primary">Apply Jop</h6>
+            <div class="pm-contact-form-container">
+                <p class="pm-required">Your email address will be held strictly confidential. <br />Required fields are marked *<br />
+                Upload Docs,PDF only *</p>
+                @using (Html.BeginForm("CreateApplyJob", "Jobs", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.Hidden("JobId")
+                    <input name="EmployeeName" id="pm_s_full_name" type="text" placeholder="Name *" class="pm-form-textfield">
+                    <input name="EmployeeEmail" id="pm_s_email_address" type="text" placeholder="Email *" class="pm-form-textfield">
+                    <input name="EmployeeMobile" id="pm_s_subject" type="text" placeholder="Mobile *" class="pm-form-textfield">
+                     <input type="file" class="pm-form-textfield" />
+                    <div id="pm-contact-form-response"></div>
+                    <input name="pm-form-submit-btn" class="pm-rounded-submit-btn pm-primary" type="submit" value="Apply" id="pm-contact-form-btn" />
+                }
+            </div>
+            </div>
+        </div>
+    </div>
+

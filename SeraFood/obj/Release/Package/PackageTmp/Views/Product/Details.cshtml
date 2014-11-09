@@ -1,0 +1,39 @@
+﻿@model SeraFood.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+<div>
+    <img class="img-circle" width="99px" height="44px" src="@Url.Action("Download", "Product", new { Model.ProductId })" />
+</div>
+<div class="form-group">
+    <label>Product Name</label>
+    <span class="form-control">
+        @Html.DisplayTextFor(p => p.ProductName)
+    </span>
+</div>
+<div class="form-group">
+    <label>Product Category</label>
+    @Html.DropDownListFor(p => p.CategoryId, ViewBag.Categories as SelectList, new { @class = "form-control", disabled = "disabled" })
+</div>
+
+<div class="form-group">
+    <label>Price</label>
+    @Html.DisplayTextFor(p => p.ProductPrice)
+</div>
+<div class="form-group">
+    <label>Product Description</label>
+    @Html.DisplayTextFor(p => p.ProductDescription)
+</div>
+<div class="form-group">
+    <label>Full Description</label>
+    @Html.DisplayTextFor(p => p.FullDescription)
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

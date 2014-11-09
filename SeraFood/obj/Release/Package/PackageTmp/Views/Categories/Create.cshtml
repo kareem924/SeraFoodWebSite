@@ -1,0 +1,15 @@
+﻿@model SeraFood.Models.Category
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("Create", "Categories", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
+{      <br />
+    <br />
+    <legend>Create new Product</legend>
+    @Html.Partial("_CreateOrUpdate", Model)
+
+}

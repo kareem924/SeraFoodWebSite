@@ -1,0 +1,69 @@
+﻿@using PagedList
+@using PagedList.Mvc
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+<div>
+    @Html.ActionLink("Create new Product", "Create", "Products", new { @class = "btn btn-success"})
+</div>
+@using (@Html.BeginForm("Index", "Product", FormMethod.Post))
+{
+    
+        <div class="form-group">
+            <label >Product Name</label>
+            @Html.TextBox("ProductName", "", new { @class = "form-control", PlaceHolder = "Search" })
+          
+        </div>
+
+         <input type="submit" class="btn btn-warning" value="Search" />
+}
+
+<table class="table table-hover">
+
+    <thead>
+        <tr>
+
+
+            <th> Product Name</th>
+            <th> Product Price </th>
+            <th>  thumbnail</th>
+        </tr>
+    </thead>
+
+    @foreach (var prdct in ViewBag.OnePageOfProducts)
+    {
+        <tbody class="table-bordered">
+            <tr>
+
+                <td style="font-size: xx-large; text-align: inherit;"> @prdct.ProductName</td>
+
+
+                <td style="font-size: xx-large; text-align: inherit;">@prdct.ProductPrice</td>
+                <td width="99px">
+                    @if (prdct.ProductImage != null)
+                    {
+                        <div class="pull-left">
+                            <img class="img-circle" width="99px" height="44px" src="@Url.Action("Download", "Product", new { prdct.ProductId})" />
+                        </div>
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = prdct.ProductId }, new { @class = "btn btn-info" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = prdct.ProductId }, new { @class = "btn btn-danger" })
+                    @Html.ActionLink("Details", "Details", new { id = prdct.ProductId }, new { @class = "btn btn-default" })
+                </td>
+
+            </tr>
+        </tbody>
+
+    }
+
+</table>
+<div class="pagedList">
+    @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("Index", new { page }))
+</div>

@@ -1,0 +1,64 @@
+﻿@using PagedList
+@using PagedList.Mvc
+
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    @Html.ActionLink("Create new Category", "Create", "Categories", new { @class = "btn btn-success" })
+</div>
+@using (@Html.BeginForm("Index", "Categories", FormMethod.Post))
+{
+
+    <div class="form-group">
+        <label>Product Name</label>
+        @Html.TextBox("CategoryName", "", new { @class = "form-control", PlaceHolder = "Search" })
+
+    </div>
+
+    <input type="submit" class="btn btn-warning" value="Search" />
+}
+
+<table class="table table-hover">
+
+    <thead>
+        <tr>
+
+
+            <th> Category Name</th>
+            <th>  thumbnail</th>
+        </tr>
+    </thead>
+
+    @foreach (var catgory in ViewBag.OnePageOfCategories)
+    {
+        <tbody class="table-bordered">
+            <tr>
+
+                <td style="font-size: xx-large; text-align: inherit;"> @catgory.CategoryName</td>
+                <td width="99px">
+                    @if (catgory.CategoryImageName != null)
+                    {
+                        <div class="pull-left">
+                            <img class="img-circle" width="99px" height="44px" src="@Url.Action("Download", "Categories", new { id = catgory.CategoryId })" />
+                        </div>
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = catgory.CategoryId }, new { @class = "btn btn-info" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = catgory.CategoryId }, new { @class = "btn btn-danger" })
+                </td>
+
+            </tr>
+        </tbody>
+
+    }
+
+</table>
+<div class="pagedList">
+    @Html.PagedListPager((IPagedList)ViewBag.OnePageOfCategories, page => Url.Action("Index", new { page }))
+</div>
