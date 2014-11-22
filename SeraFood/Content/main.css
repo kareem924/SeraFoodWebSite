@@ -1911,6 +1911,12 @@ color:white;
 .ApplyJob {
     background-image:url(imges/slider/csm_BOSS-Hugo-1.jpg);
 }
+.Contact {
+      background-image:url(imges/panels/contact.jpg);
+}
+.About {
+      background-image:url(imges/panels/hero-contact-us.png);
+}
 .pm-sub-header-title-container {
     display: inline-block;
     margin-top: 160px;
